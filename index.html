@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="เครื่องมือค้นแนวทางรักษา STI สำหรับบุคลากรทางการแพทย์ อ้างอิงคู่มือกรมควบคุมโรค พ.ศ. 2567 พร้อมหลักฐานรายหน้าและบันทึกข้อขัดแย้ง">
+<meta name="theme-color" content="#124f46">
+<title>STI Desk · แนวทางรักษา 2567</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+<script src="data.js" defer></script><script src="core.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#content">ข้ามไปเนื้อหา</a>
+<div class="app-shell">
+<aside class="sidebar" aria-label="รายการโรค">
+<a class="brand" href="#syphilis"><span class="brand-icon" aria-hidden="true">✚</span><span>STI <b>Desk</b><small>CLINICAL REFERENCE</small></span></a>
+<div class="edition"><span class="dot"></span> คู่มือ DDC พ.ศ. 2567 <span class="edition-tag">TH</span></div>
+<div class="nav-label">กลุ่มโรค <span>14 + 1 ส่วนเสริม</span></div>
+<nav id="disease-nav" aria-label="เลือกโรค"></nav>
+<div class="side-bottom"><span class="draft-dot"></span><b>ฉบับตรวจทานก่อนเผยแพร่</b><p>สำหรับบุคลากรทางการแพทย์<br>ไม่มีการเก็บข้อมูลผู้ป่วย</p><button class="text-btn" data-view="audit">ดูข้อสังเกตจากการตรวจข้อมูล ↗</button></div>
+</aside>
+<div class="workspace">
+<header class="topbar"><div class="breadcrumb">คู่มืออ้างอิง <span>/</span> <b id="crumb">การรักษา</b></div><div class="top-actions"><button id="treatment-view" class="top-nav active" data-view="treatment">การรักษา</button><button class="top-nav" data-view="audit">บันทึกตรวจสอบ <span id="audit-count"></span></button><button class="top-nav" data-view="sources">แหล่งอ้างอิง</button><button class="icon-btn" id="print" aria-label="พิมพ์เนื้อหาปัจจุบัน" title="พิมพ์">⎙</button></div></header>
+<main id="content" tabindex="-1">
+<section class="intro-row"><div><div class="eyebrow">EVIDENCE AT EVERY STEP</div><h1>ค้นสูตรรักษา <span>ตรวจหลักฐานได้</span></h1><p>14 กลุ่มโรคตามคู่มือ STI 2567 และงูสวัดจากเอกสารเสริม</p></div><div class="version-card"><span>เวอร์ชันข้อมูล</span><strong>2567 <small>+ ส่วนเสริม</small></strong><span>ตรวจต้นฉบับ · 14 ต.ค. 2569</span></div></section>
+<div class="search-row"><div class="search-wrap"><span aria-hidden="true">⌕</span><label class="sr-only" for="search">ค้นชื่อโรค ยา หรือการติดตาม</label><input id="search" type="search" placeholder="ค้นชื่อโรค ยา หรือคำสำคัญ เช่น Ceftriaxone, ซิฟิลิส…" autocomplete="off"><button id="clear-search" class="text-btn" hidden>ล้าง</button><kbd>/</kbd></div><button id="saved-filter" class="saved-button" aria-pressed="false">☆ บันทึกไว้ <span id="saved-count">0</span></button></div>
+<div class="review-banner"><span aria-hidden="true">ⓘ</span><div><b>ฉบับตรวจทาน — ยังไม่ผ่านการรับรองทางคลินิก</b><span>รายการที่พบข้อขัดแย้งถูกแยกไว้ ไม่มีการสร้างขนาดยาทดแทนโดยไม่มีหลักฐาน</span></div><button class="text-btn" data-view="audit">ดูรายละเอียด <span aria-hidden="true">↗</span></button></div>
+<div id="view-content"></div>
+<footer><span>STI Desk · เครื่องมืออ้างอิงสำหรับบุคลากรทางการแพทย์</span><span>PO = รับประทาน · IM = ฉีดเข้ากล้าม · IV = ฉีดเข้าหลอดเลือดดำ</span></footer>
+</main>
+</div>
+</div>
+<dialog id="evidence-dialog" aria-labelledby="evidence-title"><div class="dialog-head"><div><small>ตรวจเทียบเอกสารต้นฉบับ</small><h2 id="evidence-title"></h2></div><button id="close-dialog" class="icon-btn" aria-label="ปิดเอกสาร">✕</button></div><div class="dialog-actions"><a id="open-pdf" target="_blank" rel="noopener">เปิด PDF ที่หน้านี้ ↗</a><a id="open-original" target="_blank" rel="noopener">ต้นทางออนไลน์ ↗</a><a id="open-image" target="_blank" rel="noopener">ขยายภาพ ↗</a></div><p id="evidence-scope"></p><img id="evidence-image" alt=""><p class="muted">ภาพต้นฉบับช่วยตรวจหน่วย ความถี่ ระยะเวลา และเชิงอรรถที่อาจเสียรูปเมื่อแปลงข้อความ</p></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<noscript><p class="noscript">ต้องเปิด JavaScript เพื่อค้นสูตรยา <a href="evidence/ddc-2567.pdf">อ่านคู่มือต้นฉบับ PDF</a></p></noscript>
+</body></html>

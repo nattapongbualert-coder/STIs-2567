@@ -1,0 +1,3810 @@
+{
+  "version": "0.1.0-review",
+  "verifiedOn": "2026-10-14",
+  "clinicalApproval": false,
+  "sources": {
+    "ddc": {
+      "title": "กรมควบคุมโรค · STI Management Guidelines 2567",
+      "file": "evidence/ddc-2567.pdf",
+      "url": "https://stisqsa.ddc.moph.go.th/app-assets/manual/2567/แนวทางการดูแลรักษาโรคติดต่อทางเพศสัมพันธ์_2567.pdf",
+      "offset": 14,
+      "pages": 210,
+      "scope": "14 กลุ่มโรค บท 3.1–3.14; เป็นการถอดคู่มือฉบับ 2567 ไม่ใช่การยืนยันว่าเป็นแนวทางล่าสุดทุกเรื่อง",
+      "sha256": "248e077b5c25140eb233afbf0e45ba0dabb861f197d8e2b1b48c9121f0030008"
+    },
+    "nih-adult": {
+      "title": "NIH · Adult/Adolescent HIV OI: VZV",
+      "file": "evidence/nih-adult.pdf",
+      "url": "https://clinicalinfo.hiv.gov/sites/g/files/mnhszr391/files/guidelines/documents/adult-adolescent-oi/varicella-zoster-virus-adult-adolescent-oi.pdf",
+      "offset": 0,
+      "pages": 17,
+      "scope": "เฉพาะผู้ใหญ่/วัยรุ่นติดเชื้อ HIV; เลขหน้า BB-x",
+      "sha256": "2cc834ff3a8cbc27857045d295068121cebc26fac916d44a6aee50c02a28eb07"
+    },
+    "nih-pediatric": {
+      "title": "NIH · Pediatric HIV OI: VZV",
+      "file": "evidence/nih-pediatric.pdf",
+      "url": "https://clinicalinfo.hiv.gov/sites/g/files/mnhszr391/files/guidelines/documents/pediatric-oi/varicella-zoster-virus-pediatric-oi.pdf",
+      "offset": 0,
+      "pages": 21,
+      "scope": "เฉพาะเด็กติดเชื้อ HIV; เลขหน้า X-x; ไม่ใช่ QSNICH/Neofax และไม่ขยายไปเด็กทั่วไป",
+      "sha256": "f8d1358d85c401a6af3121b29a22f193ec11cd5986acdec3f1c351b45660d485"
+    },
+    "valtrex": {
+      "title": "FDA · VALTREX prescribing information 2025",
+      "file": "evidence/valtrex.pdf",
+      "url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/020487s023lbl.pdf",
+      "offset": 0,
+      "pages": 28,
+      "scope": "อ้างเลขหน้า PDF; ผู้ใหญ่ทั่วไป/การปรับไต ตามหัวข้อ 2.1 และ 2.4",
+      "sha256": "d221245e67c1f555533d344e6299bc023d810998cf67478e796ed8a77e74b2ec"
+    },
+    "acyclovir": {
+      "title": "DailyMed · Acyclovir tablets / Cadila",
+      "file": "evidence/acyclovir.pdf",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=acef88f4-6456-4092-993f-27e1496097c7&type=pdf",
+      "offset": 0,
+      "pages": 16,
+      "scope": "อ้างเลขหน้า PDF; ฉลากยารับประทานสำหรับผู้ใหญ่",
+      "sha256": "9158fc65d58e2ec1c763d8041d406fff901db5c571bd4d86fa03338dc16c2e6a"
+    }
+  },
+  "categories": {
+    "first": "First-line / สูตรแนะนำ",
+    "alternative": "Alternative / ทางเลือก",
+    "failure": "Treatment Failure / ไม่ตอบสนอง",
+    "pediatric": "Pediatric Dosage / เด็ก",
+    "followup": "Follow-up / ติดตาม",
+    "special": "กลุ่มพิเศษ / ตั้งครรภ์ / HIV"
+  },
+  "diseases": [
+    {
+      "id": "gonorrhea",
+      "name": "หนองใน",
+      "english": "Gonorrhea",
+      "chapter": "3.1",
+      "start": 35,
+      "end": 47,
+      "records": [
+        {
+          "id": "gonorrhea-001",
+          "category": "first",
+          "title": "Uncomplicated gonorrhea",
+          "text": "Ceftriaxone 1 g IM ครั้งเดียว",
+          "notes": "อวัยวะเพศ คอ และทวารหนัก; รักษาหนองในเทียมร่วมด้วยหากตรวจแยกไม่ได้",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 38
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-002",
+          "category": "first",
+          "title": "เยื่อบุตาอักเสบในผู้ใหญ่",
+          "text": "Ceftriaxone 1 g IM ครั้งเดียว",
+          "notes": "รักษาหนองในเทียมหากตรวจแยกไม่ได้; ประเมินร่วมกับจักษุแพทย์",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 41
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-003",
+          "category": "first",
+          "title": "DGI: arthritis–dermatitis",
+          "text": "Ceftriaxone 1–2 g IV วันละ 1 ครั้ง; เมื่อดีขึ้นเปลี่ยนเป็น Cefixime 400 mg PO วันละ 2 ครั้ง รวมระยะเวลา ≥7 วัน",
+          "notes": "รับไว้ในโรงพยาบาลตามหน้า 41; รักษาหนองในเทียมหากตรวจแยกไม่ได้",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 42
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-004",
+          "category": "first",
+          "title": "DGI: meningitis",
+          "text": "Ceftriaxone 1–2 g IV ทุก 12 ชั่วโมง นาน 10–14 วัน",
+          "notes": "รักษาในโรงพยาบาล",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 42
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-005",
+          "category": "first",
+          "title": "DGI: endocarditis",
+          "text": "Ceftriaxone 1–2 g IV ทุก 12 ชั่วโมง นาน ≥28 วัน",
+          "notes": "รักษาในโรงพยาบาล",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 42
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-006",
+          "category": "alternative",
+          "title": "สูตรยารับประทาน",
+          "text": "Cefixime 800 mg + Azithromycin 2 g PO ครั้งเดียว",
+          "notes": "สำหรับข้อจำกัดในการฉีดยา ไม่ต้องเพิ่มยาหนองในเทียมอีก",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 38
+            },
+            {
+              "source": "ddc",
+              "page": 42
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-007",
+          "category": "alternative",
+          "title": "แพ้ cephalosporins",
+          "text": "Gentamicin 160–240 mg (3–5 mg/kg) IM หรือ IV ครั้งเดียว + Azithromycin 2 g PO ครั้งเดียว",
+          "notes": "น้ำหนักผู้ใหญ่ <40 kg พิจารณา 160 mg; ระวังพิษต่อหูและไต; หลักฐานที่ทวารหนักไม่เพียงพอ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 38
+            },
+            {
+              "source": "ddc",
+              "page": 39
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-008",
+          "category": "alternative",
+          "title": "Spectinomycin",
+          "text": "Spectinomycin 2 g IM ครั้งเดียว",
+          "notes": "คู่มือระบุว่าไม่มีจำหน่ายในไทย ณ เวลาจัดทำ ไม่ได้ยืนยันสถานะตลาดปัจจุบัน",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 38
+            },
+            {
+              "source": "ddc",
+              "page": 39
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-009",
+          "category": "alternative",
+          "title": "DGI ทางเลือก",
+          "text": "Cefotaxime 1 g IV ทุก 8 ชั่วโมง; เมื่อดีขึ้นเปลี่ยนเป็น Cefixime 400 mg PO วันละ 2 ครั้ง รวม ≥7 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 42
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-010",
+          "category": "failure",
+          "title": "ประเมินก่อนเปลี่ยนยา",
+          "text": "ยังมีอาการหลัง 7 วันและไม่มีความเสี่ยง reinfection: เก็บ culture + AST และปรึกษา/ส่งต่อ",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 39
+            },
+            {
+              "source": "ddc",
+              "page": 40
+            },
+            {
+              "source": "ddc",
+              "page": 47
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-011",
+          "category": "failure",
+          "title": "สูตรหลัง Ceftriaxone ล้มเหลว",
+          "text": "Spectinomycin 2 g IM ครั้งเดียว + Azithromycin 2 g PO ครั้งเดียว",
+          "notes": "ห้ามใช้สูตรนี้สำหรับ oropharyngeal infection; คู่มือระบุไม่มี Spectinomycin จำหน่ายในไทย ณ เวลาจัดทำ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 39
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-012",
+          "category": "failure",
+          "title": "ทางเลือกหลัง Ceftriaxone ล้มเหลว",
+          "text": "Gentamicin 160–240 mg IM หรือ IV ครั้งเดียว + Azithromycin 2 g PO ครั้งเดียว",
+          "notes": "หลักฐานสำหรับทวารหนักและคอไม่เพียงพอ; ต้องประเมินความไวต่อยา",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 39
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-013",
+          "category": "pediatric",
+          "title": "อวัยวะเพศ / คอ / ทวารหนัก: <45 kg",
+          "text": "Ceftriaxone 50 mg/kg IM หรือ IV ครั้งเดียว สูงสุด 250 mg",
+          "notes": "ไม่ใช่สูตรทารกแรกเกิด; คู่มือแบ่ง <45 กับ >45 kg ไม่ระบุกรณีเท่ากับ 45 kg จึงไม่อนุมานให้",
+          "stage": "",
+          "scope": "เด็กตามอายุ/น้ำหนักของแต่ละสูตร",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 43
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-014",
+          "category": "pediatric",
+          "title": "อวัยวะเพศ / คอ / ทวารหนัก: >45 kg",
+          "text": "Ceftriaxone 500 mg IM หรือ IV ครั้งเดียว",
+          "notes": "คงขนาดตามคู่มือ แม้ต่างจากสูตรผู้ใหญ่; เท่ากับ 45 kg ต้องยืนยันกับผู้เชี่ยวชาญ",
+          "stage": "",
+          "scope": "เด็กตามอายุ/น้ำหนักของแต่ละสูตร",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 43
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-015",
+          "category": "pediatric",
+          "title": "เยื่อบุตา: เด็กไม่ใช่ทารก <45 kg",
+          "text": "Ceftriaxone 50 mg/kg IM หรือ IV ครั้งเดียว สูงสุด 1 g",
+          "notes": "เท่ากับ 45 kg ไม่ระบุในตาราง",
+          "stage": "",
+          "scope": "เด็กตามอายุ/น้ำหนักของแต่ละสูตร",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 44
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-016",
+          "category": "pediatric",
+          "title": "เยื่อบุตา: เด็กไม่ใช่ทารก >45 kg",
+          "text": "Ceftriaxone 1 g IM หรือ IV ครั้งเดียว",
+          "notes": "",
+          "stage": "",
+          "scope": "เด็กตามอายุ/น้ำหนักของแต่ละสูตร",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 44
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-017",
+          "category": "pediatric",
+          "title": "เยื่อบุตา: ทารกแรกเกิด",
+          "text": "Ceftriaxone 25–50 mg/kg IM หรือ IV ครั้งเดียว สูงสุด 250 mg",
+          "notes": "รับไว้ในโรงพยาบาล ตรวจการติดเชื้อแพร่กระจาย; ระวัง hyperbilirubinemia โดยเฉพาะทารกคลอดก่อนกำหนด; ให้รักษาหนองในเทียมร่วมตามบท",
+          "stage": "",
+          "scope": "เด็กตามอายุ/น้ำหนักของแต่ละสูตร",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 45
+            },
+            {
+              "source": "ddc",
+              "page": 46
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-018",
+          "category": "pediatric",
+          "title": "ทารก: ใช้ Ceftriaxone ไม่ได้",
+          "text": "Cefotaxime 100 mg/kg IM หรือ IV ครั้งเดียว",
+          "notes": "ใช้เมื่อมีข้อบ่งชี้ว่าให้ Ceftriaxone ไม่ได้",
+          "stage": "",
+          "scope": "เด็กตามอายุ/น้ำหนักของแต่ละสูตร",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 45
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-019",
+          "category": "pediatric",
+          "title": "DGI ในเด็ก / ทารก",
+          "text": "รับไว้รักษาในโรงพยาบาล; บทนี้ไม่ได้ให้สูตรยาตามน้ำหนักสำหรับ DGI",
+          "notes": "",
+          "stage": "",
+          "scope": "เด็กตามอายุ/น้ำหนักของแต่ละสูตร",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 44
+            },
+            {
+              "source": "ddc",
+              "page": 46
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-020",
+          "category": "followup",
+          "title": "ติดตามและคู่เพศสัมพันธ์",
+          "text": "หากไม่ดีขึ้นหลังรักษา 7 วัน ให้ Gram stain, culture และ AST; งดเพศสัมพันธ์ 7 วันและจนคู่ได้รับการรักษา; คู่ใน 60 วันก่อนมีอาการควรตรวจและรักษา",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 42
+            },
+            {
+              "source": "ddc",
+              "page": 47
+            }
+          ]
+        },
+        {
+          "id": "gonorrhea-021",
+          "category": "special",
+          "title": "ตั้งครรภ์ / ให้นม",
+          "text": "Ceftriaxone 1 g IM ครั้งเดียว",
+          "notes": "",
+          "stage": "",
+          "scope": "หญิงตั้งครรภ์/ให้นม",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 43
+            }
+          ]
+        }
+      ],
+      "intro": "",
+      "coverageNote": "การจัดกลุ่มในแอปใช้เพื่อค้นข้อมูล ไม่ใช่การจัดอันดับสูตรยาใหม่ หากต้นฉบับให้หลายสูตรโดยไม่จัดอันดับ จะแสดงเป็นสูตรแนะนำระดับเดียวกัน"
+    },
+    {
+      "id": "ngu",
+      "name": "หนองในเทียม",
+      "english": "Nongonococcal infection",
+      "chapter": "3.2",
+      "start": 51,
+      "end": 61,
+      "records": [
+        {
+          "id": "ngu-001",
+          "category": "first",
+          "title": "อวัยวะเพศ / ช่องคอ / ทวารหนัก",
+          "text": "Doxycycline 100 mg PO วันละ 2 ครั้ง หลังอาหาร นาน 7 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "ngu-002",
+          "category": "first",
+          "title": "Chlamydial conjunctivitis ผู้ใหญ่",
+          "text": "Doxycycline 100 mg PO วันละ 2 ครั้ง หลังอาหาร นาน 10 วัน หรือ Azithromycin 1 g PO ครั้งเดียว",
+          "notes": "ต้นฉบับให้เลือกอย่างใดอย่างหนึ่ง ไม่จัดลำดับ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 57
+            }
+          ]
+        },
+        {
+          "id": "ngu-003",
+          "category": "alternative",
+          "title": "Azithromycin",
+          "text": "Azithromycin 1 g PO ครั้งเดียว ขณะท้องว่าง",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 55
+            }
+          ]
+        },
+        {
+          "id": "ngu-004",
+          "category": "failure",
+          "title": "Persistent urethritis: ไม่ทราบเชื้อ",
+          "text": "ถ้าเริ่มด้วย Azithromycin ให้เปลี่ยนเป็น Doxycycline 100 mg PO วันละ 2 ครั้ง 7 วัน; ถ้าได้ Doxycycline ครบแล้ว ให้ Azithromycin 1 g วันแรก ตามด้วย 500 mg วันละ 1 ครั้ง อีก 3 วัน; หากยังไม่ดีขึ้นจึง Moxifloxacin 400 mg PO วันละ 1 ครั้ง 7 วัน",
+          "notes": "ลำดับตามคู่มือเมื่อไม่สามารถส่ง molecular assay; ตรวจยืนยันสาเหตุเมื่อทำได้",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 56
+            }
+          ]
+        },
+        {
+          "id": "ngu-005",
+          "category": "failure",
+          "title": "Mycoplasma genitalium",
+          "text": "Doxycycline 100 mg PO วันละ 2 ครั้ง 7 วัน แล้วตามด้วย Azithromycin 1 g วันแรก และ 500 mg วันละ 1 ครั้งอีก 3 วัน หรือ Moxifloxacin 400 mg PO วันละ 1 ครั้ง 7 วัน",
+          "notes": "ไม่ใช่ให้ยาทั้งสองชนิดปลายทางร่วมกัน",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 56
+            }
+          ]
+        },
+        {
+          "id": "ngu-006",
+          "category": "failure",
+          "title": "Trichomonas vaginalis",
+          "text": "Metronidazole 2 g PO ครั้งเดียวก่อนนอน หรือ 400–500 mg PO วันละ 2 ครั้ง 7 วัน (แนะนำในผู้หญิง) หรือ Tinidazole 2 g PO ครั้งเดียวก่อนนอน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 56
+            }
+          ]
+        },
+        {
+          "id": "ngu-007",
+          "category": "pediatric",
+          "title": "อายุ <8 ปี และน้ำหนัก <45 kg",
+          "text": "Erythromycin base 50 mg/kg/วัน แบ่ง PO วันละ 4 ครั้ง หลังอาหาร 14 วัน; ไม่เกิน 500 mg/มื้อ",
+          "notes": "ระวังสับสน mg/kg/วัน กับ mg/kg/ครั้ง",
+          "stage": "",
+          "scope": "เด็ก/ทารกตามสูตร",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 59
+            }
+          ]
+        },
+        {
+          "id": "ngu-008",
+          "category": "pediatric",
+          "title": "อายุ <8 ปี และน้ำหนัก ≥45 kg",
+          "text": "Azithromycin 1 g PO ครั้งเดียว ขณะท้องว่าง",
+          "notes": "",
+          "stage": "",
+          "scope": "เด็ก/ทารกตามสูตร",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 59
+            }
+          ]
+        },
+        {
+          "id": "ngu-009",
+          "category": "pediatric",
+          "title": "อายุ ≥8 ปี",
+          "text": "Doxycycline 100 mg PO วันละ 2 ครั้ง หลังอาหาร 7 วัน หรือ Azithromycin 1 g PO ครั้งเดียว ขณะท้องว่าง",
+          "notes": "",
+          "stage": "",
+          "scope": "เด็ก/ทารกตามสูตร",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 59
+            }
+          ]
+        },
+        {
+          "id": "ngu-010",
+          "category": "pediatric",
+          "title": "Neonatal chlamydial conjunctivitis",
+          "text": "Erythromycin base 50 mg/kg/วัน แบ่ง PO วันละ 4 ครั้ง 14 วัน",
+          "notes": "เฝ้าระวัง IHPS หากอายุ <6 สัปดาห์; ติดตามทุกราย อาจต้องรักษาซ้ำ",
+          "stage": "",
+          "scope": "เด็ก/ทารกตามสูตร",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 60
+            }
+          ]
+        },
+        {
+          "id": "ngu-011",
+          "category": "pediatric",
+          "title": "Neonatal chlamydial pneumonia",
+          "text": "Erythromycin base 50 mg/kg/วัน แบ่ง PO วันละ 4 ครั้ง 14 วัน หรือ Azithromycin suspension 20 mg/kg PO วันละ 1 ครั้ง 3 วัน",
+          "notes": "หลักฐาน Azithromycin ในทารกยังจำกัด; เฝ้าระวัง IHPS จาก Erythromycin",
+          "stage": "",
+          "scope": "เด็ก/ทารกตามสูตร",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 60
+            },
+            {
+              "source": "ddc",
+              "page": 61
+            }
+          ]
+        },
+        {
+          "id": "ngu-012",
+          "category": "pediatric",
+          "title": "ทารกเกิดจากมารดาติดเชื้อ",
+          "text": "ไม่แนะนำยาปฏิชีวนะเพื่อป้องกัน; ติดตามอาการและรักษาเมื่อพบการติดเชื้อ",
+          "notes": "",
+          "stage": "",
+          "scope": "เด็ก/ทารกตามสูตร",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 61
+            }
+          ]
+        },
+        {
+          "id": "ngu-013",
+          "category": "followup",
+          "title": "ติดตาม",
+          "text": "หากอาการไม่ดีขึ้น ให้ตรวจหาสาเหตุด้วย molecular assay; งดเพศสัมพันธ์ขณะรักษาและจนคู่ได้รับการรักษา; ตรวจและรักษาคู่ในช่วง 60 วันก่อนเริ่มอาการ",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 58
+            },
+            {
+              "source": "ddc",
+              "page": 61
+            }
+          ]
+        },
+        {
+          "id": "ngu-014",
+          "category": "special",
+          "title": "ตั้งครรภ์ / ให้นม: สูตรหลัก",
+          "text": "Azithromycin 1 g PO ครั้งเดียว",
+          "notes": "ห้ามใช้ Doxycycline ตามคู่มือ",
+          "stage": "",
+          "scope": "หญิงตั้งครรภ์/ให้นม",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 58
+            }
+          ]
+        },
+        {
+          "id": "ngu-015",
+          "category": "special",
+          "title": "ตั้งครรภ์ / ให้นม: ทางเลือก",
+          "text": "Amoxicillin 500 mg PO วันละ 3 ครั้ง หลังอาหาร 7 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "หญิงตั้งครรภ์/ให้นม",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 58
+            }
+          ]
+        }
+      ],
+      "intro": "",
+      "coverageNote": "การจัดกลุ่มในแอปใช้เพื่อค้นข้อมูล ไม่ใช่การจัดอันดับสูตรยาใหม่ หากต้นฉบับให้หลายสูตรโดยไม่จัดอันดับ จะแสดงเป็นสูตรแนะนำระดับเดียวกัน"
+    },
+    {
+      "id": "trich",
+      "name": "พยาธิช่องคลอด",
+      "english": "Trichomoniasis",
+      "chapter": "3.3",
+      "start": 65,
+      "end": 69,
+      "records": [
+        {
+          "id": "trich-001",
+          "category": "first",
+          "title": "Metronidazole: single dose",
+          "text": "Metronidazole 2 g PO ครั้งเดียว",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 68
+            }
+          ]
+        },
+        {
+          "id": "trich-002",
+          "category": "first",
+          "title": "Metronidazole: multidose",
+          "text": "Metronidazole 400–500 mg PO วันละ 2 ครั้ง 5–7 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 68
+            }
+          ]
+        },
+        {
+          "id": "trich-003",
+          "category": "alternative",
+          "title": "Tinidazole",
+          "text": "Tinidazole 2 g PO ครั้งเดียว",
+          "notes": "ไม่แนะนำในหญิงตั้งครรภ์หรือให้นม",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 68
+            }
+          ]
+        },
+        {
+          "id": "trich-004",
+          "category": "failure",
+          "title": "ยังมีอาการและตรวจพบเชื้อหลัง single dose",
+          "text": "ถ้าเดิมได้ Metronidazole 2 g ครั้งเดียว ให้ Metronidazole 400–500 mg PO วันละ 2 ครั้งอีก 7 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 68
+            }
+          ]
+        },
+        {
+          "id": "trich-005",
+          "category": "failure",
+          "title": "ยังมีอาการและตรวจพบเชื้อ",
+          "text": "Metronidazole 2 g PO วันละ 1 ครั้ง 5–7 วัน หรือ 800 mg PO วันละ 3 ครั้ง 7 วัน",
+          "notes": "ยืนยันสาเหตุและประเมิน reinfection ก่อนเลือกสูตร",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 68
+            }
+          ]
+        },
+        {
+          "id": "trich-006",
+          "category": "followup",
+          "title": "Wet smear และคู่เพศสัมพันธ์",
+          "text": "นัด 7 วัน และ 3 เดือนหลังรักษาเพื่อตรวจ wet smear; รักษาคู่ด้วยสูตรเดียวกัน; งดเพศสัมพันธ์ระหว่างรักษาจนคู่รักษาแล้ว",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 68
+            },
+            {
+              "source": "ddc",
+              "page": 69
+            }
+          ]
+        },
+        {
+          "id": "trich-007",
+          "category": "special",
+          "title": "ตั้งครรภ์",
+          "text": "คู่มือให้ใช้ Metronidazole ได้ทุกไตรมาส; เลือกสูตรตามบริบทหน้า 68",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 68
+            },
+            {
+              "source": "ddc",
+              "page": 69
+            }
+          ]
+        },
+        {
+          "id": "trich-008",
+          "category": "special",
+          "title": "ให้นมบุตร",
+          "text": "Metronidazole 2 g PO; เลื่อนให้นม 12–24 ชั่วโมงหลังรับประทานตามคู่มือ",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 69
+            }
+          ]
+        },
+        {
+          "id": "trich-009",
+          "category": "special",
+          "title": "ผู้ติดเชื้อ HIV",
+          "text": "Metronidazole 500 mg PO วันละ 2 ครั้ง 7 วัน ได้ผลดีกว่า single dose ตามคู่มือ",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 69
+            }
+          ]
+        },
+        {
+          "id": "trich-010",
+          "category": "pediatric",
+          "title": "ไม่พบหัวข้อ/สูตรแยกในแหล่งที่ใช้",
+          "text": "ไม่ได้ระบุสูตรยาที่ครบขนาดสำหรับหัวข้อนี้ในส่วนที่ตรวจ; เปิดบทต้นฉบับประกอบและปรึกษาผู้เชี่ยวชาญ ไม่อนุมานจากสูตรผู้ใหญ่",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "not-specified",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 65
+            },
+            {
+              "source": "ddc",
+              "page": 69
+            }
+          ]
+        }
+      ],
+      "intro": "",
+      "coverageNote": "การจัดกลุ่มในแอปใช้เพื่อค้นข้อมูล ไม่ใช่การจัดอันดับสูตรยาใหม่ หากต้นฉบับให้หลายสูตรโดยไม่จัดอันดับ จะแสดงเป็นสูตรแนะนำระดับเดียวกัน"
+    },
+    {
+      "id": "bv",
+      "name": "แบคทีเรียลวาจิโนซิส",
+      "english": "Bacterial vaginosis",
+      "chapter": "3.4",
+      "start": 71,
+      "end": 75,
+      "records": [
+        {
+          "id": "bv-001",
+          "category": "first",
+          "title": "Metronidazole รับประทาน",
+          "text": "Metronidazole 400–500 mg PO วันละ 2 ครั้ง หลังอาหาร 7 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 74
+            }
+          ]
+        },
+        {
+          "id": "bv-002",
+          "category": "first",
+          "title": "Metronidazole เหน็บ",
+          "text": "Metronidazole 750 mg เหน็บช่องคลอด 7 วัน",
+          "notes": "ต้นฉบับไม่ได้ระบุความถี่ต่อวัน จึงไม่เติมเอง",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 74
+            }
+          ]
+        },
+        {
+          "id": "bv-003",
+          "category": "alternative",
+          "title": "Tinidazole: 2 วัน",
+          "text": "Tinidazole 2 g PO วันละ 1 ครั้ง ก่อนนอน 2 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 74
+            }
+          ]
+        },
+        {
+          "id": "bv-004",
+          "category": "alternative",
+          "title": "Tinidazole: 5 วัน",
+          "text": "Tinidazole 1 g PO วันละ 1 ครั้ง ก่อนนอน 5 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 74
+            }
+          ]
+        },
+        {
+          "id": "bv-005",
+          "category": "alternative",
+          "title": "Clindamycin",
+          "text": "Clindamycin 300 mg PO วันละ 2 ครั้ง หลังอาหาร 7 วัน",
+          "notes": "ใช้แทนเมื่อแพ้ Metronidazole/Tinidazole",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 74
+            }
+          ]
+        },
+        {
+          "id": "bv-006",
+          "category": "followup",
+          "title": "ติดตาม",
+          "text": "ถ้ายังมีอาการ นัด 7 วันเพื่อตรวจทางห้องปฏิบัติการ",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 75
+            }
+          ]
+        },
+        {
+          "id": "bv-007",
+          "category": "special",
+          "title": "ตั้งครรภ์ / ให้นม",
+          "text": "คู่มือให้รักษาเหมือนบุคคลทั่วไป; ระวัง Tinidazole ในครรภ์เพราะข้อมูลไม่ชัดเจน; หน้า 75 แนะนำเลื่อนให้นม 12–24 ชั่วโมงหลังรับประทานยา",
+          "notes": "ข้อความเรื่องเลื่อนให้นมในต้นฉบับไม่ได้แยกยาชัดเจน ควรยืนยันยาที่ใช้เป็นรายตัว",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 75
+            }
+          ]
+        },
+        {
+          "id": "bv-008",
+          "category": "failure",
+          "title": "ไม่พบหัวข้อ/สูตรแยกในแหล่งที่ใช้",
+          "text": "ไม่ได้ระบุสูตรยาที่ครบขนาดสำหรับหัวข้อนี้ในส่วนที่ตรวจ; เปิดบทต้นฉบับประกอบและปรึกษาผู้เชี่ยวชาญ ไม่อนุมานจากสูตรผู้ใหญ่",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "not-specified",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 71
+            },
+            {
+              "source": "ddc",
+              "page": 75
+            }
+          ]
+        },
+        {
+          "id": "bv-009",
+          "category": "pediatric",
+          "title": "ไม่พบหัวข้อ/สูตรแยกในแหล่งที่ใช้",
+          "text": "ไม่ได้ระบุสูตรยาที่ครบขนาดสำหรับหัวข้อนี้ในส่วนที่ตรวจ; เปิดบทต้นฉบับประกอบและปรึกษาผู้เชี่ยวชาญ ไม่อนุมานจากสูตรผู้ใหญ่",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "not-specified",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 71
+            },
+            {
+              "source": "ddc",
+              "page": 75
+            }
+          ]
+        }
+      ],
+      "intro": "",
+      "coverageNote": "การจัดกลุ่มในแอปใช้เพื่อค้นข้อมูล ไม่ใช่การจัดอันดับสูตรยาใหม่ หากต้นฉบับให้หลายสูตรโดยไม่จัดอันดับ จะแสดงเป็นสูตรแนะนำระดับเดียวกัน"
+    },
+    {
+      "id": "vvc",
+      "name": "เชื้อราในช่องคลอด",
+      "english": "Vulvovaginal candidiasis",
+      "chapter": "3.5",
+      "start": 77,
+      "end": 81,
+      "records": [
+        {
+          "id": "vvc-001",
+          "category": "first",
+          "title": "Clotrimazole 500 mg",
+          "text": "Clotrimazole 500 mg เหน็บช่องคลอดครั้งเดียว",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 79
+            }
+          ]
+        },
+        {
+          "id": "vvc-002",
+          "category": "first",
+          "title": "Clotrimazole 200 mg",
+          "text": "Clotrimazole 200 mg เหน็บช่องคลอด 3 วัน",
+          "notes": "ตารางหน้า 79 ไม่ระบุความถี่ต่อวัน; หน้า 81 ระบุวันละ 1 ครั้งสำหรับหญิงตั้งครรภ์/ให้นม",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 79
+            }
+          ]
+        },
+        {
+          "id": "vvc-003",
+          "category": "first",
+          "title": "Clotrimazole 100 mg",
+          "text": "Clotrimazole 100 mg เหน็บช่องคลอด 6–7 วัน",
+          "notes": "ไม่เติมความถี่ที่ต้นฉบับไม่ได้ระบุ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 79
+            }
+          ]
+        },
+        {
+          "id": "vvc-004",
+          "category": "first",
+          "title": "Miconazole",
+          "text": "Miconazole 200 mg เหน็บช่องคลอด 3 วัน",
+          "notes": "ไม่เติมความถี่ที่ต้นฉบับไม่ได้ระบุ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 79
+            }
+          ]
+        },
+        {
+          "id": "vvc-005",
+          "category": "first",
+          "title": "Fluconazole",
+          "text": "Fluconazole 150–200 mg PO ครั้งเดียว",
+          "notes": "ไม่แนะนำในหญิงตั้งครรภ์/ให้นมตามคู่มือ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 79
+            },
+            {
+              "source": "ddc",
+              "page": 80
+            }
+          ]
+        },
+        {
+          "id": "vvc-006",
+          "category": "first",
+          "title": "Itraconazole",
+          "text": "Itraconazole 200 mg PO วันละ 2 ครั้ง 1 วัน",
+          "notes": "ไม่แนะนำในหญิงตั้งครรภ์/ให้นมตามคู่มือ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 79
+            },
+            {
+              "source": "ddc",
+              "page": 80
+            }
+          ]
+        },
+        {
+          "id": "vvc-007",
+          "category": "failure",
+          "title": "Recurrent VVC: Clotrimazole",
+          "text": "Clotrimazole 100 mg เหน็บช่องคลอด 14 วัน แล้ว 500 mg สัปดาห์ละ 1 ครั้ง 6 เดือน",
+          "notes": "ตารางไม่ได้ระบุความถี่ต่อวันในช่วงแรก",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 80
+            }
+          ]
+        },
+        {
+          "id": "vvc-008",
+          "category": "failure",
+          "title": "Recurrent VVC: Fluconazole คงที่",
+          "text": "Fluconazole 100–200 mg PO ทุก 3 วัน รวม 3 ครั้ง แล้วขนาดเดิมสัปดาห์ละ 1 ครั้ง 6 เดือน",
+          "notes": "ห้ามใช้ยารับประทานในหญิงตั้งครรภ์/ให้นมตามหน้า 81",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 80
+            }
+          ]
+        },
+        {
+          "id": "vvc-009",
+          "category": "failure",
+          "title": "Recurrent VVC: Fluconazole ลดความถี่",
+          "text": "Fluconazole 100–200 mg PO ทุก 3 วัน 3 ครั้ง แล้วทุกสัปดาห์; ประเมินที่ 2 เดือน ถ้าอาการและเชื้อราหายเปลี่ยนเป็นทุก 2 สัปดาห์; ประเมินอีก 2 เดือน ถ้าปกติเปลี่ยนเป็นทุกเดือน; ติดตามทุก 2 เดือนอีก 2 ครั้ง และหยุดได้หากหาย",
+          "notes": "เป็นอีกทางเลือกหนึ่ง ไม่ใช่ต่อจากสูตร 6 เดือน; ไม่ใช้ในตั้งครรภ์/ให้นม",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 80
+            }
+          ]
+        },
+        {
+          "id": "vvc-010",
+          "category": "followup",
+          "title": "ติดตาม",
+          "text": "นัด 7 วันในผู้ที่ยังมีอาการ เพื่อตรวจทางห้องปฏิบัติการ; คู่ที่มีอาการคันหรือ balanitis ควรตรวจและรักษา",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 81
+            }
+          ]
+        },
+        {
+          "id": "vvc-011",
+          "category": "special",
+          "title": "ตั้งครรภ์ / ให้นม",
+          "text": "Clotrimazole 500 mg เหน็บครั้งเดียว หรือ 200 mg เหน็บวันละ 1 ครั้ง 3 วัน; หากไม่ดีขึ้นหลังสูตรสั้น ให้ 100 mg เหน็บวันละ 1 ครั้ง 7–14 วัน",
+          "notes": "คู่มือห้ามยารับประทานในกลุ่มนี้",
+          "stage": "",
+          "scope": "หญิงตั้งครรภ์/ให้นม",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 81
+            }
+          ]
+        },
+        {
+          "id": "vvc-012",
+          "category": "special",
+          "title": "HIV",
+          "text": "รักษาเหมือนผู้ไม่ติดเชื้อ HIV; ถ้าไม่ดีขึ้นหลังสูตรสั้น ขยายระยะเวลาเป็น 7–14 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 81
+            }
+          ]
+        },
+        {
+          "id": "vvc-013",
+          "category": "alternative",
+          "title": "ไม่พบหัวข้อ/สูตรแยกในแหล่งที่ใช้",
+          "text": "ไม่ได้ระบุสูตรยาที่ครบขนาดสำหรับหัวข้อนี้ในส่วนที่ตรวจ; เปิดบทต้นฉบับประกอบและปรึกษาผู้เชี่ยวชาญ ไม่อนุมานจากสูตรผู้ใหญ่",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "not-specified",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 77
+            },
+            {
+              "source": "ddc",
+              "page": 81
+            }
+          ]
+        },
+        {
+          "id": "vvc-014",
+          "category": "pediatric",
+          "title": "ไม่พบหัวข้อ/สูตรแยกในแหล่งที่ใช้",
+          "text": "ไม่ได้ระบุสูตรยาที่ครบขนาดสำหรับหัวข้อนี้ในส่วนที่ตรวจ; เปิดบทต้นฉบับประกอบและปรึกษาผู้เชี่ยวชาญ ไม่อนุมานจากสูตรผู้ใหญ่",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "not-specified",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 77
+            },
+            {
+              "source": "ddc",
+              "page": 81
+            }
+          ]
+        }
+      ],
+      "intro": "",
+      "coverageNote": "การจัดกลุ่มในแอปใช้เพื่อค้นข้อมูล ไม่ใช่การจัดอันดับสูตรยาใหม่ หากต้นฉบับให้หลายสูตรโดยไม่จัดอันดับ จะแสดงเป็นสูตรแนะนำระดับเดียวกัน"
+    },
+    {
+      "id": "pid",
+      "name": "อุ้งเชิงกรานอักเสบ",
+      "english": "Pelvic inflammatory disease",
+      "chapter": "3.6",
+      "start": 83,
+      "end": 88,
+      "records": [
+        {
+          "id": "pid-001",
+          "category": "first",
+          "title": "สูตร OPD: Ceftriaxone",
+          "text": "Ceftriaxone 1 g IM ครั้งเดียว + Doxycycline 100 mg PO วันละ 2 ครั้ง 14 วัน + Metronidazole 500 mg PO วันละ 2 ครั้ง 14 วัน หรือ 400 mg PO วันละ 3 ครั้ง 14 วัน",
+          "notes": "ใช้เฉพาะไม่มีเยื่อบุช่องท้องอักเสบและไม่มีภาวะแทรกซ้อน; Metronidazole เลือกขนาดใดขนาดหนึ่ง",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 86
+            }
+          ]
+        },
+        {
+          "id": "pid-002",
+          "category": "first",
+          "title": "สูตร OPD: Cefoxitin",
+          "text": "Cefoxitin 2 g IM ครั้งเดียว + Doxycycline 100 mg PO วันละ 2 ครั้ง 14 วัน + Metronidazole 500 mg PO วันละ 2 ครั้ง 14 วัน หรือ 400 mg PO วันละ 3 ครั้ง 14 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 86
+            }
+          ]
+        },
+        {
+          "id": "pid-003",
+          "category": "first",
+          "title": "สูตร cephalosporin รุ่น 3 อื่น",
+          "text": "คู่มือระบุ Ceftizoxime หรือ Cefotaxime แบบฉีด ร่วม Doxycycline และ Metronidazole ตามสูตร OPD แต่ไม่ได้ระบุขนาด cephalosporin จึงไม่เติมเอง",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 86
+            }
+          ]
+        },
+        {
+          "id": "pid-004",
+          "category": "alternative",
+          "title": "แพ้ Cephalosporin",
+          "text": "Levofloxacin 500 mg PO วันละ 1 ครั้ง 14 วัน",
+          "notes": "เฉพาะโอกาส gonorrhea ต่ำและติดตามได้ ต้องส่งตรวจ NG และรักษาตาม AST ถ้าเพาะเชื้อขึ้น; ต้นฉบับไม่ได้ระบุยาร่วมในย่อหน้านี้ จึงไม่ตีความเป็นสูตรเดี่ยวที่ครบถ้วน",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "review",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 87
+            }
+          ]
+        },
+        {
+          "id": "pid-005",
+          "category": "failure",
+          "title": "ไม่ดีขึ้นหลัง 72 ชั่วโมง",
+          "text": "รับไว้ในโรงพยาบาล ปรึกษาผู้เชี่ยวชาญ และให้ยาปฏิชีวนะ IV; บทนี้ไม่ให้สูตร IPD ครบขนาด",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 88
+            }
+          ]
+        },
+        {
+          "id": "pid-006",
+          "category": "followup",
+          "title": "ประเมิน 72 ชั่วโมง",
+          "text": "ติดตามไข้ ปวดท้อง ตรวจร่างกายและตรวจภายใน; ถ้าไม่ดีขึ้นรับไว้ในโรงพยาบาล",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 88
+            }
+          ]
+        },
+        {
+          "id": "pid-007",
+          "category": "special",
+          "title": "เกณฑ์รับไว้ในโรงพยาบาล",
+          "text": "ตั้งครรภ์, tubo-ovarian abscess, อาการรุนแรง/ไข้สูง/คลื่นไส้อาเจียน, แยกโรคศัลยกรรมไม่ได้, ทนหรือติดตาม OPD ไม่ได้, ไม่ตอบสนอง; ผู้ติดเชื้อ HIV ให้รักษาในโรงพยาบาลตามคู่มือ",
+          "notes": "ไม่อนุมานสูตร IV ที่ไม่มีในบท",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 86
+            },
+            {
+              "source": "ddc",
+              "page": 88
+            }
+          ]
+        },
+        {
+          "id": "pid-008",
+          "category": "pediatric",
+          "title": "ไม่พบหัวข้อ/สูตรแยกในแหล่งที่ใช้",
+          "text": "ไม่ได้ระบุสูตรยาที่ครบขนาดสำหรับหัวข้อนี้ในส่วนที่ตรวจ; เปิดบทต้นฉบับประกอบและปรึกษาผู้เชี่ยวชาญ ไม่อนุมานจากสูตรผู้ใหญ่",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "not-specified",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 83
+            },
+            {
+              "source": "ddc",
+              "page": 88
+            }
+          ]
+        }
+      ],
+      "intro": "",
+      "coverageNote": "การจัดกลุ่มในแอปใช้เพื่อค้นข้อมูล ไม่ใช่การจัดอันดับสูตรยาใหม่ หากต้นฉบับให้หลายสูตรโดยไม่จัดอันดับ จะแสดงเป็นสูตรแนะนำระดับเดียวกัน"
+    },
+    {
+      "id": "syphilis",
+      "name": "ซิฟิลิส",
+      "english": "Syphilis",
+      "chapter": "3.7",
+      "start": 91,
+      "end": 112,
+      "records": [
+        {
+          "id": "syphilis-001",
+          "category": "first",
+          "title": "ระยะที่ 1 · Primary",
+          "text": "Benzathine penicillin G 2.4 ล้านยูนิต IM ครั้งเดียว",
+          "notes": "แบ่งฉีดสะโพกข้างละ 1.2 ล้านยูนิต",
+          "stage": "primary",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 104
+            },
+            {
+              "source": "ddc",
+              "page": 107
+            }
+          ]
+        },
+        {
+          "id": "syphilis-002",
+          "category": "alternative",
+          "title": "ระยะที่ 1 · Primary · แพ้ Penicillin",
+          "text": "Doxycycline 100 mg PO วันละ 2 ครั้ง หลังอาหาร 14 วัน หรือ Tetracycline 500 mg PO วันละ 4 ครั้ง หลังอาหาร 14 วัน",
+          "notes": "ไม่ใช้ในหญิงตั้งครรภ์; ติดตามการตอบสนอง",
+          "stage": "primary",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 104
+            },
+            {
+              "source": "ddc",
+              "page": 107
+            }
+          ]
+        },
+        {
+          "id": "syphilis-003",
+          "category": "alternative",
+          "title": "ระยะที่ 1 · Primary · Ceftriaxone",
+          "text": "Ceftriaxone 1–2 g IV หรือ IM วันละ 1 ครั้ง 10–14 วัน",
+          "notes": "สำหรับแพ้ Penicillin/ไม่มี BPG ตามตาราง; หญิงตั้งครรภ์ใช้ Penicillin หลัง desensitization",
+          "stage": "primary",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 105
+            },
+            {
+              "source": "ddc",
+              "page": 107
+            }
+          ]
+        },
+        {
+          "id": "syphilis-004",
+          "category": "alternative",
+          "title": "ระยะที่ 1 · Primary · Macrolides ในต้นฉบับ",
+          "text": "ระงับการแสดงขนาด Azithromycin / Erythromycin เป็นสูตรพร้อมใช้",
+          "notes": "DDC มีรายการนี้ แต่ CDC ไม่แนะนำ Azithromycin รักษาซิฟิลิสเพราะดื้อยา; Erythromycin ไม่ป้องกัน congenital syphilis ตาม DDC หน้า 110 ต้องผู้เชี่ยวชาญทบทวน",
+          "stage": "primary",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "quarantined",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 104
+            },
+            {
+              "source": "ddc",
+              "page": 105
+            },
+            {
+              "source": "ddc",
+              "page": 107
+            }
+          ]
+        },
+        {
+          "id": "syphilis-005",
+          "category": "first",
+          "title": "ระยะที่ 2 · Secondary",
+          "text": "Benzathine penicillin G 2.4 ล้านยูนิต IM ครั้งเดียว",
+          "notes": "แบ่งฉีดสะโพกข้างละ 1.2 ล้านยูนิต",
+          "stage": "secondary",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 104
+            },
+            {
+              "source": "ddc",
+              "page": 107
+            }
+          ]
+        },
+        {
+          "id": "syphilis-006",
+          "category": "alternative",
+          "title": "ระยะที่ 2 · Secondary · แพ้ Penicillin",
+          "text": "Doxycycline 100 mg PO วันละ 2 ครั้ง หลังอาหาร 14 วัน หรือ Tetracycline 500 mg PO วันละ 4 ครั้ง หลังอาหาร 14 วัน",
+          "notes": "ไม่ใช้ในหญิงตั้งครรภ์; ติดตามการตอบสนอง",
+          "stage": "secondary",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 104
+            },
+            {
+              "source": "ddc",
+              "page": 107
+            }
+          ]
+        },
+        {
+          "id": "syphilis-007",
+          "category": "alternative",
+          "title": "ระยะที่ 2 · Secondary · Ceftriaxone",
+          "text": "Ceftriaxone 1–2 g IV หรือ IM วันละ 1 ครั้ง 10–14 วัน",
+          "notes": "สำหรับแพ้ Penicillin/ไม่มี BPG ตามตาราง; หญิงตั้งครรภ์ใช้ Penicillin หลัง desensitization",
+          "stage": "secondary",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 105
+            },
+            {
+              "source": "ddc",
+              "page": 107
+            }
+          ]
+        },
+        {
+          "id": "syphilis-008",
+          "category": "alternative",
+          "title": "ระยะที่ 2 · Secondary · Macrolides ในต้นฉบับ",
+          "text": "ระงับการแสดงขนาด Azithromycin / Erythromycin เป็นสูตรพร้อมใช้",
+          "notes": "DDC มีรายการนี้ แต่ CDC ไม่แนะนำ Azithromycin รักษาซิฟิลิสเพราะดื้อยา; Erythromycin ไม่ป้องกัน congenital syphilis ตาม DDC หน้า 110 ต้องผู้เชี่ยวชาญทบทวน",
+          "stage": "secondary",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "quarantined",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 104
+            },
+            {
+              "source": "ddc",
+              "page": 105
+            },
+            {
+              "source": "ddc",
+              "page": 107
+            }
+          ]
+        },
+        {
+          "id": "syphilis-009",
+          "category": "first",
+          "title": "แฝงช่วงต้น · Early latent",
+          "text": "Benzathine penicillin G 2.4 ล้านยูนิต IM ครั้งเดียว",
+          "notes": "แบ่งฉีดสะโพกข้างละ 1.2 ล้านยูนิต",
+          "stage": "early-latent",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 104
+            },
+            {
+              "source": "ddc",
+              "page": 107
+            }
+          ]
+        },
+        {
+          "id": "syphilis-010",
+          "category": "alternative",
+          "title": "แฝงช่วงต้น · Early latent · แพ้ Penicillin",
+          "text": "Doxycycline 100 mg PO วันละ 2 ครั้ง หลังอาหาร 14 วัน หรือ Tetracycline 500 mg PO วันละ 4 ครั้ง หลังอาหาร 14 วัน",
+          "notes": "ไม่ใช้ในหญิงตั้งครรภ์; ติดตามการตอบสนอง",
+          "stage": "early-latent",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 104
+            },
+            {
+              "source": "ddc",
+              "page": 107
+            }
+          ]
+        },
+        {
+          "id": "syphilis-011",
+          "category": "alternative",
+          "title": "แฝงช่วงต้น · Early latent · Ceftriaxone",
+          "text": "Ceftriaxone 1–2 g IV หรือ IM วันละ 1 ครั้ง 10–14 วัน",
+          "notes": "สำหรับแพ้ Penicillin/ไม่มี BPG ตามตาราง; หญิงตั้งครรภ์ใช้ Penicillin หลัง desensitization",
+          "stage": "early-latent",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 105
+            },
+            {
+              "source": "ddc",
+              "page": 107
+            }
+          ]
+        },
+        {
+          "id": "syphilis-012",
+          "category": "alternative",
+          "title": "แฝงช่วงต้น · Early latent · Macrolides ในต้นฉบับ",
+          "text": "ระงับการแสดงขนาด Azithromycin / Erythromycin เป็นสูตรพร้อมใช้",
+          "notes": "DDC มีรายการนี้ แต่ CDC ไม่แนะนำ Azithromycin รักษาซิฟิลิสเพราะดื้อยา; Erythromycin ไม่ป้องกัน congenital syphilis ตาม DDC หน้า 110 ต้องผู้เชี่ยวชาญทบทวน",
+          "stage": "early-latent",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "quarantined",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 104
+            },
+            {
+              "source": "ddc",
+              "page": 105
+            },
+            {
+              "source": "ddc",
+              "page": 107
+            }
+          ]
+        },
+        {
+          "id": "syphilis-013",
+          "category": "first",
+          "title": "แฝงช่วงปลาย · Late latent",
+          "text": "Benzathine penicillin G 2.4 ล้านยูนิต IM สัปดาห์ละ 1 ครั้ง 3 ครั้งติดต่อกัน",
+          "notes": "แบ่งฉีดสะโพกข้างละ 1.2 ล้านยูนิต",
+          "stage": "late-latent",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 105
+            },
+            {
+              "source": "ddc",
+              "page": 108
+            }
+          ]
+        },
+        {
+          "id": "syphilis-014",
+          "category": "alternative",
+          "title": "แฝงช่วงปลาย · Late latent · แพ้ Penicillin",
+          "text": "Doxycycline 100 mg PO วันละ 2 ครั้ง หลังอาหาร 28 วัน หรือ Tetracycline 500 mg PO วันละ 4 ครั้ง หลังอาหาร 28 วัน",
+          "notes": "ไม่ใช้ในหญิงตั้งครรภ์; ติดตามการตอบสนอง",
+          "stage": "late-latent",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 105
+            },
+            {
+              "source": "ddc",
+              "page": 108
+            }
+          ]
+        },
+        {
+          "id": "syphilis-015",
+          "category": "first",
+          "title": "แฝงไม่ทราบระยะ · Unknown duration",
+          "text": "Benzathine penicillin G 2.4 ล้านยูนิต IM สัปดาห์ละ 1 ครั้ง 3 ครั้งติดต่อกัน",
+          "notes": "แบ่งฉีดสะโพกข้างละ 1.2 ล้านยูนิต",
+          "stage": "unknown",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 105
+            },
+            {
+              "source": "ddc",
+              "page": 108
+            }
+          ]
+        },
+        {
+          "id": "syphilis-016",
+          "category": "alternative",
+          "title": "แฝงไม่ทราบระยะ · Unknown duration · แพ้ Penicillin",
+          "text": "Doxycycline 100 mg PO วันละ 2 ครั้ง หลังอาหาร 28 วัน หรือ Tetracycline 500 mg PO วันละ 4 ครั้ง หลังอาหาร 28 วัน",
+          "notes": "ไม่ใช้ในหญิงตั้งครรภ์; ติดตามการตอบสนอง",
+          "stage": "unknown",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 105
+            },
+            {
+              "source": "ddc",
+              "page": 108
+            }
+          ]
+        },
+        {
+          "id": "syphilis-017",
+          "category": "first",
+          "title": "ระยะที่ 3 · Tertiary",
+          "text": "Benzathine penicillin G 2.4 ล้านยูนิต IM สัปดาห์ละ 1 ครั้ง 3 ครั้งติดต่อกัน",
+          "notes": "แบ่งฉีดสะโพกข้างละ 1.2 ล้านยูนิต; ประเมิน CSF ก่อนรักษาระยะที่ 3 (หน้า 102)",
+          "stage": "tertiary",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 105
+            },
+            {
+              "source": "ddc",
+              "page": 108
+            }
+          ]
+        },
+        {
+          "id": "syphilis-018",
+          "category": "alternative",
+          "title": "ระยะที่ 3 · Tertiary · แพ้ Penicillin",
+          "text": "Doxycycline 100 mg PO วันละ 2 ครั้ง หลังอาหาร 28 วัน หรือ Tetracycline 500 mg PO วันละ 4 ครั้ง หลังอาหาร 28 วัน",
+          "notes": "ไม่ใช้ในหญิงตั้งครรภ์; ติดตามการตอบสนอง",
+          "stage": "tertiary",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 105
+            },
+            {
+              "source": "ddc",
+              "page": 108
+            }
+          ]
+        },
+        {
+          "id": "syphilis-019",
+          "category": "first",
+          "title": "Neurosyphilis",
+          "text": "Aqueous crystalline penicillin G 18–24 ล้านยูนิต/วัน IV แบ่ง 3–4 ล้านยูนิตทุก 4 ชั่วโมง 10–14 วัน",
+          "notes": "",
+          "stage": "neuro",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 106
+            },
+            {
+              "source": "ddc",
+              "page": 108
+            }
+          ]
+        },
+        {
+          "id": "syphilis-020",
+          "category": "alternative",
+          "title": "Neurosyphilis: Ceftriaxone",
+          "text": "Ceftriaxone 2 g IV หรือ IM วันละ 1 ครั้ง 10–14 วัน",
+          "notes": "",
+          "stage": "neuro",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 108
+            }
+          ]
+        },
+        {
+          "id": "syphilis-021",
+          "category": "pediatric",
+          "title": "Congenital syphilis",
+          "text": "Aqueous crystalline penicillin G 50,000 ยูนิต/kg/ครั้ง IV ทุก 12 ชั่วโมงเมื่ออายุ 1–7 วัน; ทุก 8 ชั่วโมงเมื่ออายุ >7 วัน รวม 10 วัน",
+          "notes": "สูตรสำหรับทารกตามคู่มือ; ไม่ขยายเป็นสูตรสำหรับเด็กโต",
+          "stage": "congenital",
+          "scope": "ทารกแรกเกิด",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 106
+            },
+            {
+              "source": "ddc",
+              "page": 108
+            }
+          ]
+        },
+        {
+          "id": "syphilis-022",
+          "category": "failure",
+          "title": "เกณฑ์สงสัย failure",
+          "text": "RPR/VDRL ไม่ลดตามเกณฑ์ หรือเพิ่ม ≥4 เท่าและยังคงสูงเมื่อตรวจซ้ำห่าง >2 สัปดาห์ โดยไม่มีประวัติเสี่ยงติดซ้ำ ให้ประเมิน HIV และ CSF",
+          "notes": "ต้องแยก reinfection และ serofast; ไม่ตัดสินจากผลเดียว",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 111
+            }
+          ]
+        },
+        {
+          "id": "syphilis-023",
+          "category": "failure",
+          "title": "Retreatment เมื่อ CSF ปกติ",
+          "text": "Benzathine penicillin G 2.4 ล้านยูนิต IM สัปดาห์ละ 1 ครั้ง 3 ครั้งติดต่อกัน",
+          "notes": "ใช้ในบริบท retreatment ที่ระบุในต้นฉบับ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 111
+            }
+          ]
+        },
+        {
+          "id": "syphilis-024",
+          "category": "failure",
+          "title": "Retreatment เมื่อ CSF ผิดปกติ",
+          "text": "Aqueous crystalline penicillin G 18–24 ล้านยูนิต/วัน IV แบ่ง 3–4 ล้านยูนิตทุก 4 ชั่วโมง 10–14 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 111
+            }
+          ]
+        },
+        {
+          "id": "syphilis-025",
+          "category": "failure",
+          "title": "สงสัยติดเชื้อซ้ำ",
+          "text": "Benzathine penicillin G 2.4 ล้านยูนิต IM ครั้งเดียว และตรวจ RPR/VDRL วันที่เริ่มรักษาใหม่",
+          "notes": "ตามบริบท reinfection ในคู่มือ ไม่ใช้แทนการประเมินระยะเมื่อไม่ทราบประวัติ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 112
+            }
+          ]
+        },
+        {
+          "id": "syphilis-026",
+          "category": "followup",
+          "title": "Primary / Secondary: นัดเลือด",
+          "text": "ไม่ติด HIV: เดือน 6, 12; ติด HIV: เดือน 3, 6, 9, 12, 24; นัดประเมินอาการที่ 1 เดือน",
+          "notes": "",
+          "stage": "primary-secondary",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 112
+            }
+          ]
+        },
+        {
+          "id": "syphilis-027",
+          "category": "followup",
+          "title": "Latent ทุกระยะ: นัดเลือด",
+          "text": "ไม่ติด HIV: เดือน 6, 12, 24; ติด HIV: เดือน 6, 12, 18, 24",
+          "notes": "ตารางรวม early latent กับ latent อื่น โดยระบุ fourfold decline 12–24 เดือน แต่คำบรรยายหน้า 111 ให้ early syphilis 6–12 เดือน; แสดงความต่างนี้เพื่อให้ตรวจทาน",
+          "stage": "latent",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 112
+            }
+          ]
+        },
+        {
+          "id": "syphilis-028",
+          "category": "followup",
+          "title": "การแปล titer",
+          "text": "คำบรรยาย: early syphilis คาดลด ≥4 เท่าใน 6–12 เดือน; late latent 12–24 เดือน; ใช้ RPR/VDRL ติดตาม ไม่ใช้ treponemal test",
+          "notes": "อาจ serofast; ควรปรึกษาผู้เชี่ยวชาญหาก titer ต่ำและไม่มีประวัติเสี่ยงซ้ำ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 111
+            },
+            {
+              "source": "ddc",
+              "page": 112
+            }
+          ]
+        },
+        {
+          "id": "syphilis-029",
+          "category": "special",
+          "title": "หญิงตั้งครรภ์",
+          "text": "รักษาด้วย Penicillin ตามระยะ; หากแพ้ให้ desensitization ก่อนใช้ Penicillin",
+          "notes": "ไม่ใช้ Doxycycline/Tetracycline; Erythromycin ไม่ผ่านรกพอป้องกัน congenital syphilis; ไม่ใช้ทางเลือกของผู้ใหญ่แทนในหญิงตั้งครรภ์",
+          "stage": "",
+          "scope": "หญิงตั้งครรภ์",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 110
+            }
+          ]
+        },
+        {
+          "id": "syphilis-030",
+          "category": "special",
+          "title": "ขาดนัดฉีด BPG",
+          "text": "คู่มือหน้า 105 ให้พยายามเว้นไม่เกิน 14 วัน หากทำไม่ได้เริ่มใหม่; กฎนี้ไม่ควรใช้กับหญิงตั้งครรภ์โดยอัตโนมัติ",
+          "notes": "ต้องยืนยันเกณฑ์หญิงตั้งครรภ์แยกต่างหาก",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "review",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 105
+            }
+          ]
+        }
+      ],
+      "intro": "เลือกตามระยะโรคและประวัติการรักษา ไม่แบ่งระยะจากค่า titer เพียงอย่างเดียว · แฝงช่วงต้น ≤1 ปี; แฝงช่วงปลาย >1 ปี (หน้า 100)",
+      "coverageNote": "การจัดกลุ่มในแอปใช้เพื่อค้นข้อมูล ไม่ใช่การจัดอันดับสูตรยาใหม่ หากต้นฉบับให้หลายสูตรโดยไม่จัดอันดับ จะแสดงเป็นสูตรแนะนำระดับเดียวกัน"
+    },
+    {
+      "id": "hsv",
+      "name": "เริมอวัยวะเพศและทวารหนัก",
+      "english": "Anogenital herpes · HSV",
+      "chapter": "3.8",
+      "start": 115,
+      "end": 122,
+      "records": [
+        {
+          "id": "hsv-001",
+          "category": "first",
+          "title": "First episode: Acyclovir",
+          "text": "Acyclovir 400 mg PO วันละ 3 ครั้ง 7–10 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 118
+            }
+          ]
+        },
+        {
+          "id": "hsv-002",
+          "category": "first",
+          "title": "First episode: Acyclovir 200",
+          "text": "Acyclovir 200 mg PO วันละ 5 ครั้ง 7–10 วัน",
+          "notes": "มีประสิทธิภาพแต่ไม่ค่อยแนะนำเพราะกินบ่อย",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 118
+            },
+            {
+              "source": "ddc",
+              "page": 119
+            }
+          ]
+        },
+        {
+          "id": "hsv-003",
+          "category": "first",
+          "title": "First episode: Valacyclovir",
+          "text": "Valacyclovir 1 g PO วันละ 2 ครั้ง 7–10 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 118
+            }
+          ]
+        },
+        {
+          "id": "hsv-004",
+          "category": "first",
+          "title": "First episode: Valacyclovir 500",
+          "text": "Valacyclovir 500 mg PO วันละ 2 ครั้ง 7–10 วัน",
+          "notes": "เป็นอีกสูตรที่คู่มือระบุ ไม่เปลี่ยนให้เหมือน CDC โดยไม่แจ้ง",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 118
+            }
+          ]
+        },
+        {
+          "id": "hsv-005",
+          "category": "first",
+          "title": "First episode: Famciclovir",
+          "text": "Famciclovir 250 mg PO วันละ 3 ครั้ง 7–10 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 118
+            }
+          ]
+        },
+        {
+          "id": "hsv-006",
+          "category": "first",
+          "title": "Severe / systemic disease",
+          "text": "Acyclovir 5–10 mg/kg IV ทุก 8 ชั่วโมง 7 วันหรือจนดีขึ้น แล้วเปลี่ยนยารับประทาน ให้ระยะเวลารวม ≥10 วัน",
+          "notes": "รับไว้ในโรงพยาบาล; ไม่ใช้เป็นระยะเวลามาตรฐานสำหรับ encephalitis ทุกกรณี",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 119
+            }
+          ]
+        },
+        {
+          "id": "hsv-007",
+          "category": "alternative",
+          "title": "Recurrence: Acyclovir 800 BID",
+          "text": "Acyclovir 800 mg PO วันละ 2 ครั้ง 5 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 119
+            }
+          ]
+        },
+        {
+          "id": "hsv-008",
+          "category": "alternative",
+          "title": "Recurrence: Acyclovir 800 TID",
+          "text": "Acyclovir 800 mg PO วันละ 3 ครั้ง 2 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 119
+            }
+          ]
+        },
+        {
+          "id": "hsv-009",
+          "category": "alternative",
+          "title": "Recurrence: Acyclovir 400",
+          "text": "Acyclovir 400 mg PO วันละ 3 ครั้ง 5 วัน",
+          "notes": "มีประสิทธิภาพแต่ไม่ค่อยแนะนำเพราะกินบ่อย",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 119
+            },
+            {
+              "source": "ddc",
+              "page": 120
+            }
+          ]
+        },
+        {
+          "id": "hsv-010",
+          "category": "alternative",
+          "title": "Recurrence: Valacyclovir 1 g",
+          "text": "Valacyclovir 1 g PO วันละ 1 ครั้ง 5 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 119
+            }
+          ]
+        },
+        {
+          "id": "hsv-011",
+          "category": "alternative",
+          "title": "Recurrence: Valacyclovir 500",
+          "text": "Valacyclovir 500 mg PO วันละ 2 ครั้ง 3–5 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 119
+            }
+          ]
+        },
+        {
+          "id": "hsv-012",
+          "category": "alternative",
+          "title": "Recurrence: Famciclovir 1 g",
+          "text": "Famciclovir 1 g PO วันละ 2 ครั้ง 1 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 119
+            }
+          ]
+        },
+        {
+          "id": "hsv-013",
+          "category": "alternative",
+          "title": "Recurrence: Famciclovir สองช่วง",
+          "text": "Famciclovir 500 mg PO วันละ 1 ครั้ง 1 วัน ตามด้วย 250 mg วันละ 2 ครั้ง 2 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 119
+            }
+          ]
+        },
+        {
+          "id": "hsv-014",
+          "category": "alternative",
+          "title": "Recurrence: Famciclovir 125",
+          "text": "Famciclovir 125 mg PO วันละ 2 ครั้ง 5 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 119
+            }
+          ]
+        },
+        {
+          "id": "hsv-015",
+          "category": "special",
+          "title": "Suppressive: Acyclovir",
+          "text": "Acyclovir 400 mg PO วันละ 2 ครั้งต่อเนื่อง",
+          "notes": "พิจารณาเมื่อเป็น ≥6 ครั้ง/ปีหรือกระทบคุณภาพชีวิตมาก; ประเมินใหม่เมื่อครบ 1 ปี",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 120
+            }
+          ]
+        },
+        {
+          "id": "hsv-016",
+          "category": "special",
+          "title": "Suppressive: Valacyclovir 1 g",
+          "text": "Valacyclovir 1 g PO วันละ 1 ครั้งต่อเนื่อง",
+          "notes": "ประเมินใหม่เมื่อครบ 1 ปี",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 120
+            }
+          ]
+        },
+        {
+          "id": "hsv-017",
+          "category": "special",
+          "title": "Suppressive: Valacyclovir 500",
+          "text": "Valacyclovir 500 mg PO วันละ 1 ครั้งต่อเนื่อง",
+          "notes": "ถ้าเป็น ≥10 ครั้ง/ปี ประสิทธิภาพน้อยกว่าสูตร 1 g/วันหรือ Acyclovir 400 mg BID",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 120
+            }
+          ]
+        },
+        {
+          "id": "hsv-018",
+          "category": "special",
+          "title": "Suppressive: Famciclovir",
+          "text": "Famciclovir 250 mg PO วันละ 2 ครั้งต่อเนื่อง",
+          "notes": "ประเมินใหม่เมื่อครบ 1 ปี",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 120
+            }
+          ]
+        },
+        {
+          "id": "hsv-019",
+          "category": "special",
+          "title": "ตั้งครรภ์: suppressive Acyclovir",
+          "text": "Acyclovir 400 mg PO วันละ 3 ครั้ง เริ่มเมื่ออายุครรภ์ 36 สัปดาห์",
+          "notes": "ใกล้คลอดให้ปรึกษาผู้เชี่ยวชาญ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 122
+            }
+          ]
+        },
+        {
+          "id": "hsv-020",
+          "category": "special",
+          "title": "ตั้งครรภ์: Valacyclovir ต้องทวนสอบ",
+          "text": "ระงับสูตร Valacyclovir สำหรับ suppression ในหญิงตั้งครรภ์จากหน้า 122",
+          "notes": "ความถี่ใน DDC แตกต่างจาก CDC (หัวข้อ pregnancy suppression); ไม่แสดงเป็นสูตรพร้อมใช้",
+          "stage": "",
+          "scope": "หญิงตั้งครรภ์",
+          "status": "quarantined",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 122
+            }
+          ]
+        },
+        {
+          "id": "hsv-021",
+          "category": "failure",
+          "title": "Recalcitrant / hypertrophic HSV",
+          "text": "ยืนยันการวินิจฉัยด้วย biopsy, NAATs หรือ viral culture ก่อน; ประเมินการใช้ยา การทำงานไต และปรึกษาผู้เชี่ยวชาญ",
+          "notes": "หน้า 121 มีหลายสูตรเฉพาะทางและมีจุดเสี่ยงเรื่องขนาด จึงไม่สรุปเป็นลำดับเปลี่ยนยาอัตโนมัติ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 120
+            },
+            {
+              "source": "ddc",
+              "page": 121
+            }
+          ]
+        },
+        {
+          "id": "hsv-022",
+          "category": "failure",
+          "title": "Acyclovir escalation ในต้นฉบับ",
+          "text": "Acyclovir 400–800 mg PO วันละ 5 ครั้ง หรือ 10 mg/kg IV ทุก 8 ชั่วโมง จนรอยโรคหายแล้วพิจารณาลด",
+          "notes": "ใช้เฉพาะผู้เชี่ยวชาญประเมิน ภายใต้การติดตามไต; ไม่ใช่คำสั่งอัตโนมัติเมื่อสงสัยดื้อยา",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "review",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 121
+            }
+          ]
+        },
+        {
+          "id": "hsv-023",
+          "category": "failure",
+          "title": "Foscarnet ในต้นฉบับ",
+          "text": "Foscarnet 40 mg/kg IV ทุก 8 ชั่วโมง อย่างน้อย 1–2 สัปดาห์",
+          "notes": "ต้องผู้เชี่ยวชาญและ intensive renal/electrolyte monitoring; CDC ยืนยันเป็นยาสำหรับ acyclovir-resistant HSV แต่จุดสิ้นสุดขึ้นกับรอยโรค",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "review",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 121
+            }
+          ]
+        },
+        {
+          "id": "hsv-024",
+          "category": "failure",
+          "title": "Cidofovir IV: ระงับสูตร",
+          "text": "ไม่แสดงขนาดหรือความถี่เป็นคำแนะนำยา",
+          "notes": "พบความถี่ที่น่ากังวลในต้นฉบับ ต้องยืนยันกับเอกสารกำกับยา/ผู้เชี่ยวชาญก่อนใช้; ดูบันทึกการตรวจสอบ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "quarantined",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 121
+            }
+          ]
+        },
+        {
+          "id": "hsv-025",
+          "category": "followup",
+          "title": "ติดตาม",
+          "text": "นัด 7 วันเพื่อติดตามอาการและรอยโรค; หาก first episode ครบ 10 วันแผลยังไม่หาย ให้หาสาเหตุอื่น เช่น ติดเชื้อแบคทีเรียแทรกซ้อน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 119
+            },
+            {
+              "source": "ddc",
+              "page": 122
+            }
+          ]
+        },
+        {
+          "id": "hsv-026",
+          "category": "failure",
+          "title": "สูตรเฉพาะทางอื่นในหน้า 121",
+          "text": "ต้นฉบับกล่าวถึง Famciclovir/Valacyclovir แบบเพิ่มขนาด, topical Imiquimod, topical Foscarnet/Cidofovir, Vidarabine และหัตถการ; เปิดหน้า 121 เพื่ออ่านบริบท ไม่ถอดเป็นสูตรพร้อมใช้",
+          "notes": "บางสูตรมีช่วงขนาดกว้างหรือข้อมูลที่ต้องทวนสอบ จึงไม่จัดเป็นลำดับรักษาอัตโนมัติ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "review",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 121
+            }
+          ]
+        },
+        {
+          "id": "hsv-027",
+          "category": "pediatric",
+          "title": "ไม่พบหัวข้อ/สูตรแยกในแหล่งที่ใช้",
+          "text": "ไม่ได้ระบุสูตรยาที่ครบขนาดสำหรับหัวข้อนี้ในส่วนที่ตรวจ; เปิดบทต้นฉบับประกอบและปรึกษาผู้เชี่ยวชาญ ไม่อนุมานจากสูตรผู้ใหญ่",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "not-specified",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 115
+            },
+            {
+              "source": "ddc",
+              "page": 122
+            }
+          ]
+        }
+      ],
+      "intro": "HSV คือเริมอวัยวะเพศ แยกจากงูสวัด VZV; แบ่ง first episode, recurrence และ suppressive treatment ตามต้นฉบับ",
+      "coverageNote": "การจัดกลุ่มในแอปใช้เพื่อค้นข้อมูล ไม่ใช่การจัดอันดับสูตรยาใหม่ หากต้นฉบับให้หลายสูตรโดยไม่จัดอันดับ จะแสดงเป็นสูตรแนะนำระดับเดียวกัน"
+    },
+    {
+      "id": "chancroid",
+      "name": "แผลริมอ่อน",
+      "english": "Chancroid",
+      "chapter": "3.9",
+      "start": 125,
+      "end": 129,
+      "records": [
+        {
+          "id": "chancroid-001",
+          "category": "first",
+          "title": "Ceftriaxone",
+          "text": "Ceftriaxone 250 mg IM ครั้งเดียว",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 128
+            }
+          ]
+        },
+        {
+          "id": "chancroid-002",
+          "category": "first",
+          "title": "Azithromycin",
+          "text": "Azithromycin 1 g PO ครั้งเดียว",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 128
+            }
+          ]
+        },
+        {
+          "id": "chancroid-003",
+          "category": "first",
+          "title": "Ciprofloxacin",
+          "text": "Ciprofloxacin 500 mg PO วันละ 2 ครั้ง หลังอาหาร 3 วัน",
+          "notes": "ไม่ใช้ในหญิงตั้งครรภ์/ให้นม หรือเด็ก <18 ปีตามคู่มือ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 128
+            },
+            {
+              "source": "ddc",
+              "page": 129
+            }
+          ]
+        },
+        {
+          "id": "chancroid-004",
+          "category": "first",
+          "title": "Erythromycin",
+          "text": "Erythromycin 500 mg PO วันละ 4 ครั้ง หลังอาหาร 7 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 128
+            }
+          ]
+        },
+        {
+          "id": "chancroid-005",
+          "category": "failure",
+          "title": "แผลไม่หาย",
+          "text": "หากผู้ติดเชื้อ HIV แผลไม่หายหลังได้ยาครบ 7 วัน ให้พบผู้เชี่ยวชาญ; ไม่มีสูตร rescue เฉพาะในบท",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 129
+            }
+          ]
+        },
+        {
+          "id": "chancroid-006",
+          "category": "followup",
+          "title": "ติดตามและคู่",
+          "text": "นัด 7 วัน; คู่ใน 10 วันก่อนเริ่มอาการให้ตรวจและรักษาแม้ไม่มีอาการ",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 129
+            }
+          ]
+        },
+        {
+          "id": "chancroid-007",
+          "category": "special",
+          "title": "ตั้งครรภ์",
+          "text": "คู่มือให้เลือก Ceftriaxone หรือ Erythromycin stearate; ดูขนาดในหน้า 128",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 128
+            },
+            {
+              "source": "ddc",
+              "page": 129
+            }
+          ]
+        },
+        {
+          "id": "chancroid-008",
+          "category": "alternative",
+          "title": "ไม่พบหัวข้อ/สูตรแยกในแหล่งที่ใช้",
+          "text": "ไม่ได้ระบุสูตรยาที่ครบขนาดสำหรับหัวข้อนี้ในส่วนที่ตรวจ; เปิดบทต้นฉบับประกอบและปรึกษาผู้เชี่ยวชาญ ไม่อนุมานจากสูตรผู้ใหญ่",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "not-specified",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 125
+            },
+            {
+              "source": "ddc",
+              "page": 129
+            }
+          ]
+        },
+        {
+          "id": "chancroid-009",
+          "category": "pediatric",
+          "title": "ไม่พบหัวข้อ/สูตรแยกในแหล่งที่ใช้",
+          "text": "ไม่ได้ระบุสูตรยาที่ครบขนาดสำหรับหัวข้อนี้ในส่วนที่ตรวจ; เปิดบทต้นฉบับประกอบและปรึกษาผู้เชี่ยวชาญ ไม่อนุมานจากสูตรผู้ใหญ่",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "not-specified",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 125
+            },
+            {
+              "source": "ddc",
+              "page": 129
+            }
+          ]
+        }
+      ],
+      "intro": "",
+      "coverageNote": "การจัดกลุ่มในแอปใช้เพื่อค้นข้อมูล ไม่ใช่การจัดอันดับสูตรยาใหม่ หากต้นฉบับให้หลายสูตรโดยไม่จัดอันดับ จะแสดงเป็นสูตรแนะนำระดับเดียวกัน"
+    },
+    {
+      "id": "lgv",
+      "name": "กามโรคของต่อมและท่อน้ำเหลือง",
+      "english": "Lymphogranuloma venereum · LGV",
+      "chapter": "3.10",
+      "start": 131,
+      "end": 135,
+      "records": [
+        {
+          "id": "lgv-001",
+          "category": "first",
+          "title": "Doxycycline",
+          "text": "Doxycycline 100 mg PO วันละ 2 ครั้ง หลังอาหาร 21 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 134
+            }
+          ]
+        },
+        {
+          "id": "lgv-002",
+          "category": "alternative",
+          "title": "Azithromycin",
+          "text": "Azithromycin 1 g PO สัปดาห์ละ 1 ครั้ง หลังอาหาร 3 สัปดาห์",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 134
+            }
+          ]
+        },
+        {
+          "id": "lgv-003",
+          "category": "alternative",
+          "title": "Erythromycin",
+          "text": "Erythromycin 500 mg PO วันละ 4 ครั้ง หลังอาหาร 21 วัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 134
+            }
+          ]
+        },
+        {
+          "id": "lgv-004",
+          "category": "pediatric",
+          "title": "สูตรเด็กในคู่มือ",
+          "text": "Erythromycin 7.5–12.5 mg/kg/ครั้ง PO วันละ 4 ครั้ง 14 วัน",
+          "notes": "คู่มือไม่ได้ระบุ maximum dose; ระยะเวลาแตกต่างจากผู้ใหญ่ จึงคงตามต้นฉบับและควรให้ผู้เชี่ยวชาญทบทวน",
+          "stage": "",
+          "scope": "เด็ก",
+          "status": "review",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 135
+            }
+          ]
+        },
+        {
+          "id": "lgv-005",
+          "category": "followup",
+          "title": "ติดตาม",
+          "text": "นัด 3 สัปดาห์หลังเริ่มรักษา; คู่ใน 90 วันก่อนมีอาการให้ตรวจและรักษาตามคู่มือ",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 134
+            },
+            {
+              "source": "ddc",
+              "page": 135
+            }
+          ]
+        },
+        {
+          "id": "lgv-006",
+          "category": "special",
+          "title": "ตั้งครรภ์ / ให้นม / HIV",
+          "text": "ตั้งครรภ์/ให้นมไม่ใช้ Doxycycline ให้ Azithromycin หรือ Erythromycin stearate ตามสูตร; HIV รักษาเหมือนทั่วไป แต่อาจต้องนานจนหาย",
+          "notes": "ไม่ใช้ Pregnancy Category ที่ขัดกันในเล่มมาจัดความปลอดภัย",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 135
+            }
+          ]
+        },
+        {
+          "id": "lgv-007",
+          "category": "failure",
+          "title": "ไม่พบหัวข้อ/สูตรแยกในแหล่งที่ใช้",
+          "text": "ไม่ได้ระบุสูตรยาที่ครบขนาดสำหรับหัวข้อนี้ในส่วนที่ตรวจ; เปิดบทต้นฉบับประกอบและปรึกษาผู้เชี่ยวชาญ ไม่อนุมานจากสูตรผู้ใหญ่",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "not-specified",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 131
+            },
+            {
+              "source": "ddc",
+              "page": 135
+            }
+          ]
+        }
+      ],
+      "intro": "",
+      "coverageNote": "การจัดกลุ่มในแอปใช้เพื่อค้นข้อมูล ไม่ใช่การจัดอันดับสูตรยาใหม่ หากต้นฉบับให้หลายสูตรโดยไม่จัดอันดับ จะแสดงเป็นสูตรแนะนำระดับเดียวกัน"
+    },
+    {
+      "id": "warts",
+      "name": "หูดหงอนไก่",
+      "english": "Anogenital warts",
+      "chapter": "3.11",
+      "start": 137,
+      "end": 145,
+      "records": [
+        {
+          "id": "warts-001",
+          "category": "first",
+          "title": "หูดขนาดเล็ก: Podophyllin",
+          "text": "Tincture podophyllin 25% ทาสัปดาห์ละ 1 ครั้ง; ล้างด้วยน้ำและสบู่หลัง ~4 ชั่วโมง; ไม่เกิน 10 cm² หรือ 0.5 mL/ครั้ง",
+          "notes": "ทาวาสลีนป้องกันผิวรอบข้าง; ห้ามใช้ที่ปากมดลูก/ภายในทวารหนัก; ผู้ให้บริการเป็นผู้ใช้",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 141
+            }
+          ]
+        },
+        {
+          "id": "warts-002",
+          "category": "first",
+          "title": "หูดขนาดเล็ก: TCA",
+          "text": "TCA 80–100% ทาหูดสัปดาห์ละ 1 ครั้ง; ทาวาสลีนป้องกันรอบข้าง",
+          "notes": "ห้ามใช้ที่ท่อปัสสาวะ; ผู้ให้บริการเป็นผู้ใช้",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 141
+            }
+          ]
+        },
+        {
+          "id": "warts-003",
+          "category": "first",
+          "title": "หูดขนาดเล็ก: Imiquimod",
+          "text": "Imiquimod 5% ทาก่อนนอนวันเว้นวัน หรือสัปดาห์ละ 3 ครั้ง จนหาย/ไม่เกิน 16 สัปดาห์; ล้างหลัง 6–10 ชั่วโมง",
+          "notes": "ห้ามที่ท่อปัสสาวะ ปากมดลูก ภายในช่องคลอด และเด็ก <12 ปี",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 142
+            }
+          ]
+        },
+        {
+          "id": "warts-004",
+          "category": "alternative",
+          "title": "หัตถการ / แบ่งตามตำแหน่ง",
+          "text": "Cryotherapy, ผ่าตัด, electrosurgery หรือเลเซอร์ สำหรับหูดใหญ่/รักษาไม่ตอบสนอง; ช่องคลอด ปากมดลูก ทวารหนัก: TCA, cryotherapy หรือผ่าตัด; ปากท่อปัสสาวะ: Podophyllin, cryotherapy หรือผ่าตัดตามคู่มือ",
+          "notes": "หูดปากมดลูกควรพบผู้เชี่ยวชาญและพิจารณา biopsy ก่อนรักษา",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 142
+            },
+            {
+              "source": "ddc",
+              "page": 143
+            }
+          ]
+        },
+        {
+          "id": "warts-005",
+          "category": "failure",
+          "title": "ไม่ตอบสนอง / ผิดลักษณะ",
+          "text": "เปลี่ยนวิธีเมื่อไม่ตอบสนองหรือผลข้างเคียงรุนแรง; พิจารณา biopsy หากเข้ม มีแผล เลือดออก หรือแย่ลง",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 140
+            }
+          ]
+        },
+        {
+          "id": "warts-006",
+          "category": "pediatric",
+          "title": "เด็ก",
+          "text": "คู่มือไม่มีขนาดยาทางเด็กแยกต่างหาก; ห้าม Imiquimod ในเด็ก <12 ปี; ประเมินประวัติและตรวจเพิ่มเติมเมื่อพบ genital warts ในเด็ก",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 142
+            },
+            {
+              "source": "ddc",
+              "page": 143
+            }
+          ]
+        },
+        {
+          "id": "warts-007",
+          "category": "followup",
+          "title": "ติดตามหูด",
+          "text": "Podophyllin หรือ TCA นัดทายาทุก 1 สัปดาห์จนหาย; บทระบุว่าส่วนใหญ่ตอบสนองภายใน 3 เดือน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 140
+            },
+            {
+              "source": "ddc",
+              "page": 145
+            }
+          ]
+        },
+        {
+          "id": "warts-008",
+          "category": "special",
+          "title": "หญิงตั้งครรภ์",
+          "text": "TCA 80–100% ตามวิธีหน้า 141; ห้าม Podophyllin และ Imiquimod ตามคู่มือ",
+          "notes": "",
+          "stage": "",
+          "scope": "หญิงตั้งครรภ์",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 141
+            },
+            {
+              "source": "ddc",
+              "page": 145
+            }
+          ]
+        }
+      ],
+      "intro": "",
+      "coverageNote": "การจัดกลุ่มในแอปใช้เพื่อค้นข้อมูล ไม่ใช่การจัดอันดับสูตรยาใหม่ หากต้นฉบับให้หลายสูตรโดยไม่จัดอันดับ จะแสดงเป็นสูตรแนะนำระดับเดียวกัน"
+    },
+    {
+      "id": "molluscum",
+      "name": "หูดข้าวสุก",
+      "english": "Molluscum contagiosum",
+      "chapter": "3.12",
+      "start": 147,
+      "end": 152,
+      "records": [
+        {
+          "id": "molluscum-001",
+          "category": "first",
+          "title": "พิจารณาเฝ้าดู / หัตถการ",
+          "text": "อาจหายเอง การตัดสินใจรักษาขึ้นกับรายบุคคล; curettage หรือ mechanical removal เป็นวิธีที่ได้ผล; ป้องกันการแกะเกาและใช้ของร่วมกัน",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 150
+            }
+          ]
+        },
+        {
+          "id": "molluscum-002",
+          "category": "alternative",
+          "title": "Cryotherapy",
+          "text": "Liquid nitrogen นาน 10–20 วินาที 1–2 รอบ ทำซ้ำได้ทุก 2 สัปดาห์",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 151
+            }
+          ]
+        },
+        {
+          "id": "molluscum-003",
+          "category": "alternative",
+          "title": "Podophyllin",
+          "text": "Tincture podophyllin 10–25% ทา 2–3 ครั้ง/สัปดาห์ ล้างหลัง 4 ชั่วโมง",
+          "notes": "ห้ามในครรภ์; ไม่แนะนำให้นม",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 151
+            }
+          ]
+        },
+        {
+          "id": "molluscum-004",
+          "category": "alternative",
+          "title": "Imiquimod",
+          "text": "Imiquimod cream ทา 3 ครั้ง/สัปดาห์ ล้างหลัง 6–10 ชั่วโมง",
+          "notes": "บทนี้ไม่ได้ระบุความเข้มข้น จึงไม่เติม; ห้ามในครรภ์/ไม่แนะนำให้นมตามคู่มือ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 151
+            }
+          ]
+        },
+        {
+          "id": "molluscum-005",
+          "category": "alternative",
+          "title": "Tretinoin",
+          "text": "Tretinoin 0.1% cream ทาวันละ 1 ครั้งก่อนนอน",
+          "notes": "ห้ามในครรภ์ตามคู่มือ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 151
+            }
+          ]
+        },
+        {
+          "id": "molluscum-006",
+          "category": "alternative",
+          "title": "Cimetidine",
+          "text": "Cimetidine 25–40 mg/kg/วัน PO เมื่อรอยโรคกระจายมากหรือไม่ร่วมมือกับหัตถการ",
+          "notes": "ไม่ระบุจำนวนครั้ง/วัน ระยะเวลา และ maximum จึงไม่สร้างสูตรแบ่งมื้อ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 151
+            }
+          ]
+        },
+        {
+          "id": "molluscum-007",
+          "category": "pediatric",
+          "title": "พิจารณาเด็กเป็นรายบุคคล",
+          "text": "ตัดสินใจร่วมกับผู้ปกครอง; อาจใช้ยาชาทาก่อนหัตถการที่เจ็บ; บทระบุ curettage และ Cimetidine แต่ไม่มีสูตรเด็กที่ครบ maximum/ความถี่",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 152
+            }
+          ]
+        },
+        {
+          "id": "molluscum-008",
+          "category": "failure",
+          "title": "ไม่หาย",
+          "text": "ให้พบผู้เชี่ยวชาญในผู้ติดเชื้อ HIV ที่ไม่หาย; ไม่พบสูตร rescue ครบขนาดเฉพาะในบท",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 152
+            }
+          ]
+        },
+        {
+          "id": "molluscum-009",
+          "category": "followup",
+          "title": "ติดตาม",
+          "text": "นัด 1–2 สัปดาห์ หรือตามวิธีรักษา",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 152
+            }
+          ]
+        },
+        {
+          "id": "molluscum-010",
+          "category": "special",
+          "title": "ไม่พบหัวข้อ/สูตรแยกในแหล่งที่ใช้",
+          "text": "ไม่ได้ระบุสูตรยาที่ครบขนาดสำหรับหัวข้อนี้ในส่วนที่ตรวจ; เปิดบทต้นฉบับประกอบและปรึกษาผู้เชี่ยวชาญ ไม่อนุมานจากสูตรผู้ใหญ่",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "not-specified",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 147
+            },
+            {
+              "source": "ddc",
+              "page": 152
+            }
+          ]
+        }
+      ],
+      "intro": "",
+      "coverageNote": "การจัดกลุ่มในแอปใช้เพื่อค้นข้อมูล ไม่ใช่การจัดอันดับสูตรยาใหม่ หากต้นฉบับให้หลายสูตรโดยไม่จัดอันดับ จะแสดงเป็นสูตรแนะนำระดับเดียวกัน"
+    },
+    {
+      "id": "scabies",
+      "name": "หิด",
+      "english": "Scabies",
+      "chapter": "3.13",
+      "start": 155,
+      "end": 161,
+      "records": [
+        {
+          "id": "scabies-001",
+          "category": "first",
+          "title": "Permethrin",
+          "text": "Permethrin 5% cream ทาทั่วตัว คอลงมาถึงปลายเท้า ทิ้ง 8–14 ชั่วโมงแล้วล้าง ทำซ้ำอีก 1 สัปดาห์",
+          "notes": "ถ้ามีรอยโรคหน้า/ศีรษะสามารถทาได้ตามบท; ป้องกันไม่ให้เข้าตา/เยื่อบุ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 159
+            }
+          ]
+        },
+        {
+          "id": "scabies-002",
+          "category": "first",
+          "title": "Crusted scabies",
+          "text": "Permethrin 5% ทาทั่วตัว 8–14 ชั่วโมงแล้วล้างทุกวัน 7 วัน จากนั้นสัปดาห์ละ 2 ครั้งจนหาย + Ivermectin 200 µg/kg PO วันที่ 1, 2, 8, 9, 15; รุนแรงมากเพิ่มวันที่ 22, 29",
+          "notes": "Ivermectin ห้ามในตั้งครรภ์/ให้นม/น้ำหนัก <15 kg ตามคู่มือ; ผู้เชี่ยวชาญดูแล",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 159
+            },
+            {
+              "source": "ddc",
+              "page": 160
+            }
+          ]
+        },
+        {
+          "id": "scabies-003",
+          "category": "alternative",
+          "title": "Benzyl benzoate",
+          "text": "Benzyl benzoate 10–25% emulsion ทาทั่วตัว 8–14 ชั่วโมงแล้วล้าง ทำซ้ำใน 1 สัปดาห์",
+          "notes": "ไม่ควรใช้เด็ก <6 ปี อาจระคายเคือง",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 159
+            }
+          ]
+        },
+        {
+          "id": "scabies-004",
+          "category": "alternative",
+          "title": "Ivermectin",
+          "text": "Ivermectin 200 µg/kg PO ครั้งเดียว และซ้ำขนาดเดิมภายใน 2 สัปดาห์",
+          "notes": "หน่วย µg ไม่ใช่ mg; ห้ามตั้งครรภ์/ให้นม/เด็กน้ำหนัก <15 kg ตามคู่มือ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 159
+            },
+            {
+              "source": "ddc",
+              "page": 160
+            }
+          ]
+        },
+        {
+          "id": "scabies-005",
+          "category": "alternative",
+          "title": "Sulfur",
+          "text": "Sulfur ointment 5–10% ทาทิ้ง 8 ชั่วโมงแล้วล้าง ต่อเนื่อง 3–7 วัน หรือทา 24 ชั่วโมง ล้างและทาใหม่ 3 วัน; ทำซ้ำใน 1 สัปดาห์",
+          "notes": "คำแนะนำมีหลายวิธีตามต้นฉบับ",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 160
+            }
+          ]
+        },
+        {
+          "id": "scabies-006",
+          "category": "pediatric",
+          "title": "เด็ก ≥2 ปี",
+          "text": "Permethrin 5% cream ทาทั่วตัว 8–14 ชั่วโมงแล้วล้าง ทำซ้ำอีก 1 สัปดาห์",
+          "notes": "",
+          "stage": "",
+          "scope": "เด็ก ≥2 ปี",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 160
+            }
+          ]
+        },
+        {
+          "id": "scabies-007",
+          "category": "pediatric",
+          "title": "เด็ก <2 ปี: Permethrin ต้องทวนสอบ",
+          "text": "ระงับสูตรเวลาสัมผัสสั้นในหน้า 160; ไม่อนุมานเวลาทาจากสูตรเด็กโต",
+          "notes": "ต่างจาก CDC ที่ระบุ 8–14 ชั่วโมงในอายุ ≥2 เดือน ต้องผู้เชี่ยวชาญยืนยัน",
+          "stage": "",
+          "scope": "เด็ก <2 ปี",
+          "status": "quarantined",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 160
+            }
+          ]
+        },
+        {
+          "id": "scabies-008",
+          "category": "pediatric",
+          "title": "ทารก <2 เดือน",
+          "text": "พิจารณา Sulfur ointment 5–10%; วิธีตามหัวข้อ Sulfur หน้า 160; ไม่ใช้ Permethrin ตามคู่มือ",
+          "notes": "ไม่ใช้ Ivermectin ในเด็กน้ำหนัก <15 kg ตามคู่มือ",
+          "stage": "",
+          "scope": "ทารก <2 เดือน",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 160
+            }
+          ]
+        },
+        {
+          "id": "scabies-009",
+          "category": "special",
+          "title": "ตั้งครรภ์ / ให้นม",
+          "text": "Sulfur ointment 5–10% ตามวิธีหน้า 160; ระงับสูตร Permethrin เวลาสัมผัสสั้นไว้ทวนสอบ",
+          "notes": "ไม่ใช้ Ivermectin ตามคู่มือ; ดูบันทึกข้อขัดแย้ง",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "review",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 160
+            }
+          ]
+        },
+        {
+          "id": "scabies-010",
+          "category": "failure",
+          "title": "ยังคัน / มีรอยใหม่",
+          "text": "อาการคันอาจคง 4 สัปดาห์แม้หาย; หากมีผื่นใหม่ ตรวจซ้ำและประเมินวิธีทายา การรักษาคนในบ้าน และ reinfection",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 161
+            }
+          ]
+        },
+        {
+          "id": "scabies-011",
+          "category": "followup",
+          "title": "นัด / สัมผัสใกล้ชิด",
+          "text": "นัดตามแพทย์ โดยทั่วไปดีขึ้นใน 2 สัปดาห์; รักษาคู่ สมาชิกทุกคนในบ้าน และผู้สัมผัสใกล้ชิดพร้อมกัน; ซัก/อบสิ่งของ 50–60°C หรือปิดถุง ≥72 ชั่วโมง",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 159
+            },
+            {
+              "source": "ddc",
+              "page": 160
+            },
+            {
+              "source": "ddc",
+              "page": 161
+            }
+          ]
+        }
+      ],
+      "intro": "",
+      "coverageNote": "การจัดกลุ่มในแอปใช้เพื่อค้นข้อมูล ไม่ใช่การจัดอันดับสูตรยาใหม่ หากต้นฉบับให้หลายสูตรโดยไม่จัดอันดับ จะแสดงเป็นสูตรแนะนำระดับเดียวกัน"
+    },
+    {
+      "id": "lice",
+      "name": "โลน",
+      "english": "Pediculosis pubis",
+      "chapter": "3.14",
+      "start": 163,
+      "end": 167,
+      "records": [
+        {
+          "id": "lice-001",
+          "category": "first",
+          "title": "Permethrin",
+          "text": "Permethrin 1% lotion ทาบริเวณเส้นขน 10 นาทีแล้วล้าง",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 166
+            }
+          ]
+        },
+        {
+          "id": "lice-002",
+          "category": "first",
+          "title": "Malathion",
+          "text": "Malathion 0.5% lotion ทาบริเวณเส้นขน 8–12 ชั่วโมงแล้วล้าง",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 166
+            }
+          ]
+        },
+        {
+          "id": "lice-003",
+          "category": "first",
+          "title": "Ivermectin: โลนอวัยวะเพศ",
+          "text": "Ivermectin 250 µg/kg PO ครั้งเดียว และซ้ำใน 7–14 วัน",
+          "notes": "แยกจากขนาดสำหรับโลนขนตา",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 166
+            }
+          ]
+        },
+        {
+          "id": "lice-004",
+          "category": "first",
+          "title": "โลนขนตา: Ivermectin",
+          "text": "Ivermectin 200 µg/kg PO ครั้งเดียว และซ้ำใน 7–14 วัน",
+          "notes": "ต้องประเมินโดยแพทย์; ไม่ใช้ยาทาโลนอวัยวะเพศใกล้ดวงตา",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 166
+            }
+          ]
+        },
+        {
+          "id": "lice-005",
+          "category": "first",
+          "title": "โลนขนตา: ขี้ผึ้ง",
+          "text": "ปิโตรเลียมเจลลีหรือขี้ผึ้งป้ายตา ทาขนตาวันละ 2 ครั้ง 10 วัน",
+          "notes": "ใช้ผลิตภัณฑ์เหมาะกับบริเวณตาโดยแพทย์",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 166
+            }
+          ]
+        },
+        {
+          "id": "lice-006",
+          "category": "failure",
+          "title": "ยังพบตัวโลน",
+          "text": "ถ้ายาฆ่าไม่หมด ให้ทายาอีกครั้ง 1 สัปดาห์หลังครั้งแรก",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 167
+            }
+          ]
+        },
+        {
+          "id": "lice-007",
+          "category": "followup",
+          "title": "ติดตาม / คู่",
+          "text": "นัด 1 สัปดาห์; คู่ใน 30 วันก่อนเริ่มอาการให้ตรวจและรักษาพร้อมกัน; งดเพศสัมพันธ์จนหาย",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 166
+            },
+            {
+              "source": "ddc",
+              "page": 167
+            }
+          ]
+        },
+        {
+          "id": "lice-008",
+          "category": "special",
+          "title": "ตั้งครรภ์ / ให้นม",
+          "text": "Permethrin 1% lotion ทาบริเวณเส้นขน 10 นาทีแล้วล้าง",
+          "notes": "",
+          "stage": "",
+          "scope": "หญิงตั้งครรภ์/ให้นม",
+          "status": "active",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 167
+            }
+          ]
+        },
+        {
+          "id": "lice-009",
+          "category": "alternative",
+          "title": "ไม่พบหัวข้อ/สูตรแยกในแหล่งที่ใช้",
+          "text": "ไม่ได้ระบุสูตรยาที่ครบขนาดสำหรับหัวข้อนี้ในส่วนที่ตรวจ; เปิดบทต้นฉบับประกอบและปรึกษาผู้เชี่ยวชาญ ไม่อนุมานจากสูตรผู้ใหญ่",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "not-specified",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 163
+            },
+            {
+              "source": "ddc",
+              "page": 167
+            }
+          ]
+        },
+        {
+          "id": "lice-010",
+          "category": "pediatric",
+          "title": "ไม่พบหัวข้อ/สูตรแยกในแหล่งที่ใช้",
+          "text": "ไม่ได้ระบุสูตรยาที่ครบขนาดสำหรับหัวข้อนี้ในส่วนที่ตรวจ; เปิดบทต้นฉบับประกอบและปรึกษาผู้เชี่ยวชาญ ไม่อนุมานจากสูตรผู้ใหญ่",
+          "notes": "",
+          "stage": "",
+          "scope": "ตามบริบทที่ระบุ",
+          "status": "not-specified",
+          "refs": [
+            {
+              "source": "ddc",
+              "page": 163
+            },
+            {
+              "source": "ddc",
+              "page": 167
+            }
+          ]
+        }
+      ],
+      "intro": "",
+      "coverageNote": "การจัดกลุ่มในแอปใช้เพื่อค้นข้อมูล ไม่ใช่การจัดอันดับสูตรยาใหม่ หากต้นฉบับให้หลายสูตรโดยไม่จัดอันดับ จะแสดงเป็นสูตรแนะนำระดับเดียวกัน"
+    },
+    {
+      "id": "zoster",
+      "name": "งูสวัด",
+      "english": "Herpes zoster · VZV",
+      "chapter": "เสริม",
+      "start": 0,
+      "end": 0,
+      "records": [
+        {
+          "id": "zoster-001",
+          "category": "first",
+          "title": "ผู้ใหญ่ภูมิคุ้มกันปกติ · Valacyclovir",
+          "text": "Valacyclovir 1 g PO วันละ 3 ครั้ง 7 วัน",
+          "notes": "เริ่มเร็วที่สุด; FDA ระบุได้ผลดีที่สุดเมื่อเริ่มภายใน 48 ชั่วโมง; ต้องปรับตามไต",
+          "stage": "",
+          "scope": "ผู้ใหญ่ภูมิคุ้มกันปกติ",
+          "status": "active",
+          "refs": [
+            {
+              "source": "valtrex",
+              "page": 4
+            }
+          ]
+        },
+        {
+          "id": "zoster-002",
+          "category": "first",
+          "title": "HIV · localized dermatomal HZ",
+          "text": "Valacyclovir 1 g PO วันละ 3 ครั้ง หรือ Famciclovir 500 mg PO วันละ 3 ครั้ง นาน 7–10 วัน",
+          "notes": "พิจารณานานขึ้นหากรอยโรคหายช้า; ไม่ใช้ระยะเวลานี้แทนฉลากผู้ใหญ่ทั่วไปโดยไม่ระบุบริบท",
+          "stage": "",
+          "scope": "ผู้ใหญ่/วัยรุ่นติดเชื้อ HIV",
+          "status": "active",
+          "refs": [
+            {
+              "source": "nih-adult",
+              "page": 7
+            }
+          ]
+        },
+        {
+          "id": "zoster-003",
+          "category": "alternative",
+          "title": "ผู้ใหญ่ · Acyclovir",
+          "text": "Acyclovir 800 mg PO ทุก 4 ชั่วโมง วันละ 5 ครั้ง 7–10 วัน",
+          "notes": "เริ่มเร็ว; ต้องปรับขนาดเมื่อไตบกพร่อง",
+          "stage": "",
+          "scope": "ผู้ใหญ่",
+          "status": "active",
+          "refs": [
+            {
+              "source": "acyclovir",
+              "page": 9
+            }
+          ]
+        },
+        {
+          "id": "zoster-004",
+          "category": "alternative",
+          "title": "HIV · Acyclovir",
+          "text": "Acyclovir 800 mg PO วันละ 5 ครั้ง 7–10 วัน",
+          "notes": "เป็น Alternative ตาม NIH",
+          "stage": "",
+          "scope": "ผู้ใหญ่/วัยรุ่นติดเชื้อ HIV",
+          "status": "active",
+          "refs": [
+            {
+              "source": "nih-adult",
+              "page": 7
+            }
+          ]
+        },
+        {
+          "id": "zoster-005",
+          "category": "first",
+          "title": "HIV · extensive / visceral disease",
+          "text": "Acyclovir 10 mg/kg IV ทุก 8 ชั่วโมงจนดีขึ้น; เปลี่ยนเป็นยารับประทานเมื่อไม่มีรอยใหม่และ visceral signs ดีขึ้น ให้รวม 10–14 วัน",
+          "notes": "รักษาในโรงพยาบาลและปรับตามไต; ไม่ใช่สูตร outpatient",
+          "stage": "",
+          "scope": "ผู้ใหญ่/วัยรุ่นติดเชื้อ HIV",
+          "status": "active",
+          "refs": [
+            {
+              "source": "nih-adult",
+              "page": 7
+            }
+          ]
+        },
+        {
+          "id": "zoster-006",
+          "category": "failure",
+          "title": "HIV · ไม่ตอบสนอง",
+          "text": "หากไม่ดีขึ้นใน 7 วันหรือรอยโรคผิดลักษณะ ให้ viral culture และ susceptibility testing; สงสัย/ยืนยันดื้อ Acyclovir ให้ผู้เชี่ยวชาญพิจารณา IV Foscarnet",
+          "notes": "เอกสารส่วนนี้ไม่ให้ขนาด Foscarnet จึงไม่เติมเอง; Foscarnet/Cidofovir เป็นพิษต่อไต",
+          "stage": "",
+          "scope": "ผู้ใหญ่/วัยรุ่นติดเชื้อ HIV",
+          "status": "active",
+          "refs": [
+            {
+              "source": "nih-adult",
+              "page": 11
+            }
+          ]
+        },
+        {
+          "id": "zoster-007",
+          "category": "pediatric",
+          "title": "HIV · uncomplicated HZ อายุ ≥3 เดือน",
+          "text": "Valacyclovir 20 mg/kg/ครั้ง PO วันละ 3 ครั้ง 7–14 วัน สูงสุด 1,000 mg/ครั้ง",
+          "notes": "เฉพาะเด็ก HIV stage 1–2 ตาม NIH; ไม่อนุมานเป็นสูตรเด็กภูมิปกติ",
+          "stage": "",
+          "scope": "เด็กติดเชื้อ HIV",
+          "status": "active",
+          "refs": [
+            {
+              "source": "nih-pediatric",
+              "page": 13
+            }
+          ]
+        },
+        {
+          "id": "zoster-008",
+          "category": "pediatric",
+          "title": "HIV · อายุ <3 เดือน / หา Valacyclovir ไม่ได้",
+          "text": "Acyclovir 20 mg/kg/ครั้ง PO วันละ 4 ครั้ง 7–14 วัน สูงสุด 800 mg/ครั้ง",
+          "notes": "เฉพาะ uncomplicated HZ ในเด็ก HIV stage 1–2; ปรึกษาผู้เชี่ยวชาญและปรับตามไต",
+          "stage": "",
+          "scope": "เด็กติดเชื้อ HIV",
+          "status": "active",
+          "refs": [
+            {
+              "source": "nih-pediatric",
+              "page": 13
+            }
+          ]
+        },
+        {
+          "id": "zoster-009",
+          "category": "pediatric",
+          "title": "HIV · severe / complicated HZ",
+          "text": "Acyclovir 10 mg/kg/ครั้ง หรือ 500 mg/m²/ครั้ง IV ทุก 8 ชั่วโมง 10–14 วัน",
+          "notes": "stage 3, trigeminal/sacral, visceral, หลาย dermatome หรือ disseminated; ทางเลือก mg/kg และ mg/m² ไม่ใช่ให้รวมกัน",
+          "stage": "",
+          "scope": "เด็กติดเชื้อ HIV",
+          "status": "active",
+          "refs": [
+            {
+              "source": "nih-pediatric",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "zoster-010",
+          "category": "pediatric",
+          "title": "HIV · สงสัยดื้อ Acyclovir",
+          "text": "Foscarnet 120–180 mg/kg/วัน IV แบ่งทุก 8–12 ชั่วโมง ≥7 วัน และจนไม่มีรอยใหม่ 48 ชั่วโมง",
+          "notes": "หน่วยเป็น mg/kg/วัน ไม่ใช่ต่อครั้ง; ต้องผู้เชี่ยวชาญและติดตามไต/เกลือแร่",
+          "stage": "",
+          "scope": "เด็กติดเชื้อ HIV",
+          "status": "review",
+          "refs": [
+            {
+              "source": "nih-pediatric",
+              "page": 12
+            }
+          ]
+        },
+        {
+          "id": "zoster-011",
+          "category": "followup",
+          "title": "V1 / ตา / ไม่ดีขึ้น",
+          "text": "V1 zoster ต้องตรวจโดยจักษุแพทย์และตรวจตาซ้ำแม้รอยผิวหนังหายแล้ว; ไม่ดีขึ้น 7 วันให้ประเมินดื้อยา; ไม่มีตารางวันนัดทั่วไปที่ตายตัวในส่วนที่อ้าง",
+          "notes": "",
+          "stage": "",
+          "scope": "ผู้ใหญ่/วัยรุ่นติดเชื้อ HIV",
+          "status": "active",
+          "refs": [
+            {
+              "source": "nih-adult",
+              "page": 7
+            },
+            {
+              "source": "nih-adult",
+              "page": 11
+            }
+          ]
+        },
+        {
+          "id": "zoster-012",
+          "category": "special",
+          "title": "การปรับยาตามไต: Valacyclovir ในผู้ใหญ่",
+          "text": "Herpes zoster: CrCl ≥50 mL/min ให้ 1 g ทุก 8 ชม.; 30–49 ให้ 1 g ทุก 12 ชม.; 10–29 ให้ 1 g ทุก 24 ชม.; <10 ให้ 500 mg ทุก 24 ชม.",
+          "notes": "ผู้ฟอกเลือดให้หลัง hemodialysis; ไม่ใช้ตารางผู้ใหญ่กับเด็ก",
+          "stage": "",
+          "scope": "ผู้ใหญ่ไตบกพร่อง",
+          "status": "active",
+          "refs": [
+            {
+              "source": "valtrex",
+              "page": 5
+            },
+            {
+              "source": "valtrex",
+              "page": 6
+            }
+          ]
+        }
+      ],
+      "intro": "ส่วนเสริม ไม่ใช่บทในคู่มือ STI 2567 · สูตรทั่วไปจากเอกสารกำกับยา FDA/DailyMed; สูตร HIV และเด็ก HIV จาก NIH ระบุประชากรทุกสูตร",
+      "coverageNote": "การจัดกลุ่มในแอปใช้เพื่อค้นข้อมูล ไม่ใช่การจัดอันดับสูตรยาใหม่ หากต้นฉบับให้หลายสูตรโดยไม่จัดอันดับ จะแสดงเป็นสูตรแนะนำระดับเดียวกัน"
+    }
+  ],
+  "audit": [
+    {
+      "id": "HSV-CIDOFOVIR",
+      "disease": "hsv",
+      "severity": "high",
+      "page": 121,
+      "title": "Cidofovir IV: ความถี่น่ากังวล",
+      "detail": "ต้นฉบับระบุความถี่ถี่มาก ต้องยืนยันกับเอกสารกำกับยาและผู้เชี่ยวชาญก่อนใช้ ไม่แสดงขนาดเป็นคำแนะนำในแอป",
+      "action": "Quarantined · ห้ามใช้เป็นสูตรยา",
+      "compare": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=44966a7e-d777-40fb-956f-d0f31f737848"
+    },
+    {
+      "id": "HSV-PREGNANCY",
+      "disease": "hsv",
+      "severity": "high",
+      "page": 122,
+      "title": "Valacyclovir suppression ในครรภ์ไม่ตรง CDC",
+      "detail": "ความถี่ใน DDC แตกต่างจาก CDC หัวข้อ Suppression of Recurrent Genital Herpes Among Pregnant Women; ระงับสูตรนี้โดยไม่แก้ต้นฉบับเงียบ ๆ",
+      "action": "Quarantined · ต้องให้ผู้เชี่ยวชาญยืนยัน",
+      "compare": "https://www.cdc.gov/std/treatment-guidelines/herpes.htm"
+    },
+    {
+      "id": "SYPHILIS-MACROLIDE",
+      "disease": "syphilis",
+      "severity": "high",
+      "page": 107,
+      "title": "Azithromycin รักษาซิฟิลิสมีข้อขัดแย้ง",
+      "detail": "DDC แสดงเป็นทางเลือก แต่ CDC ไม่แนะนำเนื่องจากการดื้อยาและ treatment failure; ระงับ macrolide จากรายการพร้อมใช้",
+      "action": "Quarantined · คงหน้าอ้างอิงเพื่อเทียบ",
+      "compare": "https://www.cdc.gov/std/treatment-guidelines/p-and-s-syphilis.htm"
+    },
+    {
+      "id": "SCABIES-CONTACT",
+      "disease": "scabies",
+      "severity": "high",
+      "page": 160,
+      "title": "Permethrin เวลาสัมผัสสั้นในครรภ์/เด็กเล็ก",
+      "detail": "DDC กำหนดเวลาสัมผัสสั้นกว่า CDC ที่ระบุ 8–14 ชม. สำหรับอายุ ≥2 เดือน; ไม่สรุปว่าต้นฉบับผิด แต่ระงับสูตรสั้นจนทวนสอบได้",
+      "action": "Quarantined · ต้องทบทวนเป็นรายกลุ่ม",
+      "compare": "https://www.cdc.gov/scabies/hcp/clinical-care/index.html"
+    },
+    {
+      "id": "GC-45KG",
+      "disease": "gonorrhea",
+      "severity": "medium",
+      "page": 43,
+      "title": "ช่องว่างน้ำหนักเท่ากับ 45 kg",
+      "detail": "ตารางแยก <45 และ >45 kg ไม่มีเท่ากับ 45 kg; แอปไม่เติมเกณฑ์เอง และคงขนาด >45 kg ตามต้นฉบับ",
+      "action": "ระบุช่องว่าง · ไม่ทำเครื่องคิดขนาดยา",
+      "compare": ""
+    },
+    {
+      "id": "SYPHILIS-FOLLOWUP",
+      "disease": "syphilis",
+      "severity": "medium",
+      "page": 112,
+      "title": "Early latent: คำบรรยายกับตารางติดตามต่างกัน",
+      "detail": "หน้า 111 ให้ early syphilis ลด fourfold ใน 6–12 เดือน; ตารางหน้า 112 รวม early latent กับ latent อื่นและระบุ 12–24 เดือน แสดงทั้งสองพร้อมข้อสังเกต",
+      "action": "แสดงความต่าง · ไม่เลือกตัวเลขแทนผู้เชี่ยวชาญ",
+      "compare": ""
+    },
+    {
+      "id": "PID-ALTERNATIVE",
+      "disease": "pid",
+      "severity": "medium",
+      "page": 87,
+      "title": "สูตรแพ้ Cephalosporin ไม่ครบยาร่วมในย่อหน้า",
+      "detail": "บทระบุ Levofloxacin และเงื่อนไขคัดเลือก แต่ไม่ได้แจกแจงยาร่วม จึงไม่ใช้เป็น complete regimen อัตโนมัติ",
+      "action": "Review · ผู้เชี่ยวชาญยืนยัน",
+      "compare": ""
+    }
+  ]
+}
